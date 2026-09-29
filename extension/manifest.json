@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Pip — Smart Card Picker",
+  "short_name": "Pip",
+  "version": "1.0.0",
+  "description": "Compare the reward rules for cards in your Pip wallet at checkout.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://pip-card-scout.vercel.app/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Ask Pip which card to use",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://pip-card-scout.vercel.app"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["content.css"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}

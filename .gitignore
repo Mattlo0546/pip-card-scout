@@ -1,0 +1,15 @@
+.next/
+node_modules/
+.env*
+!.env.example
+coverage/
+playwright-report/
+test-results/
+dist/
+*.tsbuildinfo
+.DS_Store
+supabase/.temp/
+*.prin
+*.prproj
+Adobe Premiere Pro Auto-Save/
+.vercel

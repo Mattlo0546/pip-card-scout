@@ -1,0 +1,1089 @@
+{
+  "schema_version": "1.0",
+  "retrieved_date": "2026-09-28",
+  "market": "United Kingdom",
+  "scope": "Personal credit cards open to new applicants, checked against official issuer or official product-distributor pages only.",
+  "methodology": {
+    "valuation_policy": "No third-party or inferred points valuations are used. A monetary value is recorded only where an official source gives a fixed or minimum conversion.",
+    "publishability_values": {
+      "rankable": "The ongoing purchase reward can be converted to money using an official fixed/minimum conversion, or is paid directly as cashback.",
+      "identity_only": "The product is current and sourced, but its reward currency has no official fixed monetary conversion suitable for deterministic ranking.",
+      "exclude": "Not a current, generally available personal credit-card product."
+    },
+    "introductory_promotions": "Kept separate from ongoing rewards because eligibility, dates and welcome-bonus rules can change.",
+    "fees": "A null value means the official material reviewed did not explicitly provide the value; it does not mean zero."
+  },
+  "issuer_notes": [
+    {
+      "issuer": "Sainsbury's Bank",
+      "status": "no_current_products",
+      "publishability": "exclude",
+      "note": "Sainsbury's Bank states that it no longer offers or manages credit cards. Existing accounts were transferred or closed, so no legacy Sainsbury's card is included as an active product.",
+      "official_urls": [
+        "https://www.sainsburysbank.co.uk/accountsupport",
+        "https://www.sainsburysbank.co.uk/credit-cards/everyday-credit-card?prodid=pr27"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "amex-uk-platinum-card",
+      "issuer": "American Express UK",
+      "product_name": "The Platinum Card®",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/platinum-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-card/Platinum_Card_Summary_Box.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 650,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate": 1,
+          "unit": "Membership Rewards point",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "prepaid hotels, flights, car hire and experiences booked at amextravel.co.uk",
+          "rate": 2,
+          "unit": "Membership Rewards points",
+          "per_gbp": 1,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "minimum annual income £35,000"
+      ],
+      "publishability": "identity_only",
+      "publishability_reason": "Membership Rewards points do not have one fixed official cash value across redemption options.",
+      "ambiguities": [
+        "The product page describes Membership Rewards redemption options but does not state a single fixed value applicable to every point."
+      ]
+    },
+    {
+      "id": "amex-uk-preferred-rewards-gold",
+      "issuer": "American Express UK",
+      "product_name": "Preferred Rewards Gold Credit Card",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/gold-credit-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/gold-credit-card/Preferred_Rewards_Gold_Credit_Card_Summary_Box.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 195,
+      "annual_fee_notes": "The first cardmembership year is currently fee-free; £195 applies from year two.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate": 1,
+          "unit": "Membership Rewards point",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "eligible spend directly with airlines and purchases in a foreign currency",
+          "rate": 2,
+          "unit": "Membership Rewards points",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "eligible bookings at amextravel.co.uk",
+          "rate": 3,
+          "unit": "Membership Rewards points",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "annual spend bonus",
+          "rate": 5000,
+          "unit": "bonus Membership Rewards points",
+          "per_spend_threshold_gbp": 10000,
+          "cap": "10,000 bonus points per cardmembership year"
+        }
+      ],
+      "official_fixed_redemption_value": null,
+      "introductory_promotions": [
+        {
+          "offer": "First cardmembership year annual fee £0",
+          "conditions": "New account; ongoing fee begins in year two."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "minimum annual income £20,000"
+      ],
+      "publishability": "identity_only",
+      "publishability_reason": "Membership Rewards points do not have one fixed official cash value across redemption options.",
+      "ambiguities": [
+        "The page markets gift-card value examples using 'up to'; these are not a universal fixed point value."
+      ]
+    },
+    {
+      "id": "amex-uk-rewards-credit-card",
+      "issuer": "American Express UK",
+      "product_name": "American Express® Rewards Credit Card",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/rewards-credit-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/rewards-credit-card/American_Express_Rewards_301_5VT_Card_Summary_Box.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate": 1,
+          "unit": "Membership Rewards point",
+          "per_gbp": 1,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.005,
+        "type": "official example",
+        "scope": "The product page gives named gift-card examples including 5,000 points for £25 at M&S, 10,000 for £50 at Selfridges and 20,000 for £100 at Amazon. Other redemptions may differ.",
+        "source_url": "https://www.americanexpress.com/en-gb/credit-cards/rewards-credit-card/"
+      },
+      "introductory_promotions": [],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "minimum annual income £15,000"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "The issuer supplies a repeatable £0.005-per-point value for several named gift-card examples; ranking must label that redemption basis rather than imply it is universal.",
+      "ambiguities": [
+        "Membership Rewards value varies by redemption; £0.005 is valid only for the cited official examples."
+      ]
+    },
+    {
+      "id": "amex-uk-cashback-everyday",
+      "issuer": "American Express UK",
+      "product_name": "Amex® Cashback Everyday Credit Card",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/platinum-cashback-everyday-credit-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-cashback-everyday-credit-card/Plat-CB-everyday-SB.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases up to £10,000 in a cardmembership year",
+          "rate_percent": 0.5,
+          "cap": null
+        },
+        {
+          "category": "eligible purchases above £10,000 in a cardmembership year",
+          "rate_percent": 1.0,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "type": "cashback",
+        "gbp_per_gbp_cashback": 1,
+        "scope": "Statement cashback under the card's cashback terms."
+      },
+      "introductory_promotions": [
+        {
+          "offer": "5% cashback during the first five months",
+          "cap": "£125 welcome cashback",
+          "conditions": "Welcome-offer eligibility rules apply."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "minimum annual income £15,000"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "Ongoing rewards are stated directly as cashback percentages.",
+      "ambiguities": [
+        "At least £3,000 of eligible spend in the cardmembership year is required to receive cashback."
+      ]
+    },
+    {
+      "id": "amex-uk-cashback",
+      "issuer": "American Express UK",
+      "product_name": "Amex® Cashback Credit Card",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/platinum-cashback-credit-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-cashback-credit-card/Plat-CB-SB.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 25,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases up to £10,000 in a cardmembership year",
+          "rate_percent": 0.75,
+          "cap": null
+        },
+        {
+          "category": "eligible purchases above £10,000 in a cardmembership year",
+          "rate_percent": 1.25,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "type": "cashback",
+        "gbp_per_gbp_cashback": 1,
+        "scope": "Statement cashback under the card's cashback terms."
+      },
+      "introductory_promotions": [
+        {
+          "offer": "5% cashback during the first three months",
+          "cap": "£125 welcome cashback",
+          "conditions": "Welcome-offer eligibility rules apply."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "minimum annual income £20,000"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "Ongoing rewards are stated directly as cashback percentages and the annual fee is explicit.",
+      "ambiguities": []
+    },
+    {
+      "id": "amex-uk-british-airways",
+      "issuer": "American Express UK",
+      "product_name": "British Airways American Express® Credit Card",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/ba-credit-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/ba-credit-card/BACreditSummaryBox.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate": 1,
+          "unit": "Avios",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "annual spend benefit",
+          "rate": 1,
+          "unit": "Companion Voucher",
+          "per_spend_threshold_gbp": 15000,
+          "cap": "one per cardmembership year",
+          "notes": "Voucher can be used on economy Reward Flights, subject to programme terms."
+        }
+      ],
+      "official_fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "minimum annual income £15,000",
+        "British Airways Club membership is needed to collect Avios"
+      ],
+      "publishability": "identity_only",
+      "publishability_reason": "Avios and the Companion Voucher do not have a single official fixed monetary value.",
+      "ambiguities": []
+    },
+    {
+      "id": "amex-uk-british-airways-premium-plus",
+      "issuer": "American Express UK",
+      "product_name": "British Airways American Express® Premium Plus Card",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/ba-premium-plus-credit-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/ba-premium-plus-credit-card/BAPremiumPlusSummaryBox.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 300,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases through 2026-10-06",
+          "rate": 1.5,
+          "unit": "Avios",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "eligible purchases from 2026-10-07",
+          "rate": 1.25,
+          "unit": "Avios",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "eligible spend directly with British Airways and British Airways Holidays through 2026-10-06",
+          "rate": 3,
+          "unit": "Avios",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "annual spend benefit",
+          "rate": 1,
+          "unit": "Companion Voucher",
+          "per_spend_threshold_gbp": 15000,
+          "cap": "one per cardmembership year",
+          "notes": "Voucher can be used on Reward Flights in any cabin, subject to programme terms."
+        }
+      ],
+      "official_fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "British Airways Club membership is needed to collect Avios"
+      ],
+      "publishability": "identity_only",
+      "publishability_reason": "Avios and the Companion Voucher do not have a single official fixed monetary value.",
+      "ambiguities": [
+        "The issuer announces an earn-rate change effective 7 October 2026. The 3-Avios British Airways/British Airways Holidays rate is shown only through 6 October on the official page; the post-change category rate should be rechecked on the effective date."
+      ]
+    },
+    {
+      "id": "amex-uk-marriott-bonvoy",
+      "issuer": "American Express UK",
+      "product_name": "Marriott Bonvoy® American Express® Credit Card",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/marriott-bonvoy-credit-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/marriott-credit-card/Marriott-SummaryBox.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 95,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate": 2,
+          "unit": "Marriott Bonvoy points",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "eligible purchases at participating Marriott Bonvoy properties",
+          "rate": 6,
+          "unit": "Marriott Bonvoy points",
+          "per_gbp": 1,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "minimum annual income £20,000",
+        "Marriott Bonvoy membership is required to receive points"
+      ],
+      "publishability": "identity_only",
+      "publishability_reason": "Marriott Bonvoy points do not have a single official fixed monetary value.",
+      "ambiguities": []
+    },
+    {
+      "id": "amex-uk-nectar",
+      "issuer": "American Express UK",
+      "product_name": "Nectar Credit Card",
+      "product_url": "https://www.americanexpress.com/en-gb/credit-cards/nectar-credit-card/",
+      "official_terms_or_summary_url": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/nectar-credit-card/NectarCard-SB.pdf",
+      "network": "American Express",
+      "annual_fee_gbp": 30,
+      "annual_fee_notes": "The first cardmembership year is currently fee-free; £30 applies from year two.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate": 2,
+          "unit": "Nectar points",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "eligible purchases at Nectar partners when the Nectar loyalty card is also used",
+          "rate": 3,
+          "unit": "Nectar points minimum total",
+          "per_gbp": 1,
+          "cap": null,
+          "notes": "The total includes the underlying Nectar-programme earn as well as the credit-card earn."
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.005,
+        "type": "official minimum",
+        "scope": "The product page says 10,000 Nectar points are worth at least £50 and 20,000 are worth at least £100 at participating partners; redemption may be higher for some options.",
+        "source_url": "https://www.americanexpress.com/en-gb/credit-cards/nectar-credit-card/"
+      },
+      "introductory_promotions": [
+        {
+          "offer": "First cardmembership year annual fee £0",
+          "conditions": "New account; ongoing fee begins in year two."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions after conversion",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over",
+        "permanent UK home address and current UK bank or building-society account",
+        "no history of bad debt",
+        "minimum annual income £20,000",
+        "Nectar membership is required"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "The issuer states an official minimum monetary value of £0.005 per Nectar point for named partner redemptions.",
+      "ambiguities": [
+        "The advertised partner earn of at least 3 points per £1 includes points earned from presenting the separate Nectar loyalty card; it is not wholly incremental credit-card reward."
+      ]
+    },
+    {
+      "id": "virgin-money-uk-virgin-atlantic-reward-plus",
+      "issuer": "Virgin Money",
+      "product_name": "Virgin Atlantic Reward+ Credit Card",
+      "product_url": "https://uk.virginmoney.com/cards/products/vaa-cards/",
+      "official_terms_or_summary_url": "https://uk.virginmoney.com/virgin/assets/pdf/VM48924.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 160,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate": 1.5,
+          "unit": "Virgin Points",
+          "per_gbp": 1,
+          "cap": "Eligible spend used to calculate points is capped at the account credit limit in each monthly statement period."
+        },
+        {
+          "category": "eligible purchases directly with Virgin Atlantic and Virgin Holidays",
+          "rate": 3,
+          "unit": "Virgin Points",
+          "per_gbp": 1,
+          "cap": "Eligible spend used to calculate points is capped at the account credit limit in each monthly statement period."
+        },
+        {
+          "category": "annual spend benefit",
+          "rate": 1,
+          "unit": "Virgin Atlantic reward voucher",
+          "per_spend_threshold_gbp": 10000,
+          "cap": "one per card year"
+        }
+      ],
+      "official_fixed_redemption_value": null,
+      "introductory_promotions": [
+        {
+          "offer": "18,000 bonus Virgin Points",
+          "conditions": "Make a first card purchase within 90 days; offer and eligibility terms apply."
+        },
+        {
+          "offer": "0% interest on balance transfers and money transfers for 6 months",
+          "conditions": "Transfers must be made within 60 days of account opening; 3% handling fee."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "most foreign-currency retail transactions",
+        "exceptions": [
+          "No non-sterling transaction fee for eligible euro, Swedish krona and Romanian leu transactions made in the UK or EEA, according to the summary material."
+        ]
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over, subject to status",
+        "Virgin Atlantic Flying Club membership number required for the main cardholder",
+        "Virgin Red account needed to spend Virgin Points"
+      ],
+      "publishability": "identity_only",
+      "publishability_reason": "Virgin Points and the annual reward voucher do not have a single official fixed monetary value.",
+      "ambiguities": [
+        "Reward-voucher value depends on Flying Club tier and redemption."
+      ]
+    },
+    {
+      "id": "virgin-money-uk-virgin-atlantic-reward",
+      "issuer": "Virgin Money",
+      "product_name": "Virgin Atlantic Reward Credit Card",
+      "product_url": "https://uk.virginmoney.com/cards/products/vaa-cards/",
+      "official_terms_or_summary_url": "https://uk.virginmoney.com/virgin/assets/pdf/VM48925.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate": 0.75,
+          "unit": "Virgin Points",
+          "per_gbp": 1,
+          "cap": "Eligible spend used to calculate points is capped at the account credit limit in each monthly statement period."
+        },
+        {
+          "category": "eligible purchases directly with Virgin Atlantic and Virgin Holidays",
+          "rate": 1.5,
+          "unit": "Virgin Points",
+          "per_gbp": 1,
+          "cap": "Eligible spend used to calculate points is capped at the account credit limit in each monthly statement period."
+        },
+        {
+          "category": "annual spend benefit",
+          "rate": 1,
+          "unit": "Virgin Atlantic reward voucher",
+          "per_spend_threshold_gbp": 20000,
+          "cap": "one per card year"
+        }
+      ],
+      "official_fixed_redemption_value": null,
+      "introductory_promotions": [
+        {
+          "offer": "3,000 bonus Virgin Points",
+          "conditions": "Make a first card purchase within 90 days; offer and eligibility terms apply."
+        },
+        {
+          "offer": "0% interest on balance transfers and money transfers for 6 months",
+          "conditions": "Transfers must be made within 60 days of account opening; 3% handling fee."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "most foreign-currency retail transactions",
+        "exceptions": [
+          "No non-sterling transaction fee for eligible euro, Swedish krona and Romanian leu transactions made in the UK or EEA, according to the summary material."
+        ]
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over, subject to status",
+        "Virgin Atlantic Flying Club membership number required for the main cardholder",
+        "Virgin Red account needed to spend Virgin Points"
+      ],
+      "publishability": "identity_only",
+      "publishability_reason": "Virgin Points and the annual reward voucher do not have a single official fixed monetary value.",
+      "ambiguities": [
+        "Reward-voucher value depends on Flying Club tier and redemption."
+      ]
+    },
+    {
+      "id": "virgin-money-uk-everyday-cashback",
+      "issuer": "Virgin Money",
+      "product_name": "Virgin Money Everyday Cashback Credit Card",
+      "product_url": "https://uk.virginmoney.com/cards/products/everyday-cashback-cards/",
+      "official_terms_or_summary_url": "https://uk.virginmoney.com/cards/terms/everyday-cashback-card-terms/",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": null,
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases",
+          "rate_percent": 0.25,
+          "cap": "£15 cashback per statement month"
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "type": "cashback",
+        "gbp_per_gbp_cashback": 1,
+        "scope": "Cashback paid under the card's terms."
+      },
+      "introductory_promotions": [
+        {
+          "offer": "1% cashback for the first 90 days",
+          "cap": "£15 cashback per statement month",
+          "conditions": "Eligible purchases and offer terms apply."
+        }
+      ],
+      "fx_fee": {
+        "percent": 0,
+        "scope": "card purchases worldwide",
+        "exceptions": [
+          "Cash withdrawals and other cash-like transactions can have separate charges."
+        ]
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over, subject to status"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "The ongoing reward is direct cashback and the monthly cap is explicit.",
+      "ambiguities": []
+    },
+    {
+      "id": "tesco-bank-balance-transfer-and-purchases",
+      "issuer": "Tesco Bank",
+      "product_name": "Balance Transfer and Purchases Credit Card",
+      "product_url": "https://www.tescobank.com/credit-cards/balance-transfer-and-purchases-credit-card/",
+      "official_terms_or_summary_url": "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+      "network": null,
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": "Tesco Bank's official charges page states no annual fee for Clubcard Credit Cards.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases outside Tesco",
+          "rate": 1,
+          "unit": "Clubcard point",
+          "per_gbp": 8,
+          "cap": null,
+          "notes": "Points are calculated per transaction."
+        },
+        {
+          "category": "eligible Tesco purchases",
+          "rate": 1,
+          "unit": "additional Clubcard point from the credit card",
+          "per_gbp": 4,
+          "cap": null,
+          "notes": "The linked Clubcard also earns its usual points; the issuer sometimes markets the combined total as 5 points per £4."
+        },
+        {
+          "category": "Tesco fuel excluding Esso",
+          "rate": 1,
+          "unit": "Clubcard point",
+          "per_gbp": 4,
+          "cap": null,
+          "notes": "A separate volume-based Clubcard earn applies; it is not modelled here."
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.01,
+        "type": "fixed voucher conversion",
+        "scope": "100 Clubcard points convert to £1 in Clubcard vouchers; Reward Partner value can differ.",
+        "source_url": "https://www.tescobank.com/credit-cards/"
+      },
+      "introductory_promotions": [
+        {
+          "offer": "0% interest on purchases for 21 months and 0% on balance transfers for 21 months",
+          "conditions": "2.95% balance-transfer fee; transfers must meet the stated timing rules."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.75,
+        "scope": "foreign-currency transactions",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over, subject to status"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "Clubcard vouchers have an official fixed base conversion; the model uses only credit-card-attributable points where separable.",
+      "ambiguities": [
+        "The network was not explicitly stated in the official pages reviewed.",
+        "At Tesco, headline point totals can combine ordinary Clubcard earnings with incremental credit-card earnings."
+      ]
+    },
+    {
+      "id": "tesco-bank-all-round",
+      "issuer": "Tesco Bank",
+      "product_name": "All Round Credit Card",
+      "product_url": "https://www.tescobank.com/credit-cards/all-round-credit-cards/",
+      "official_terms_or_summary_url": "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+      "network": null,
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": "Tesco Bank's official charges page states no annual fee for Clubcard Credit Cards.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases outside Tesco",
+          "rate": 1,
+          "unit": "Clubcard point",
+          "per_gbp": 8,
+          "cap": null,
+          "notes": "Points are calculated per transaction."
+        },
+        {
+          "category": "eligible Tesco purchases",
+          "rate": 1,
+          "unit": "additional Clubcard point from the credit card",
+          "per_gbp": 4,
+          "cap": null,
+          "notes": "The linked Clubcard also earns its usual points; the issuer sometimes markets the combined total as 5 points per £4."
+        },
+        {
+          "category": "Tesco fuel excluding Esso",
+          "rate": 1,
+          "unit": "Clubcard point",
+          "per_gbp": 4,
+          "cap": null,
+          "notes": "A separate volume-based Clubcard earn applies; it is not modelled here."
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.01,
+        "type": "fixed voucher conversion",
+        "scope": "100 Clubcard points convert to £1 in Clubcard vouchers; Reward Partner value can differ.",
+        "source_url": "https://www.tescobank.com/credit-cards/"
+      },
+      "introductory_promotions": [
+        {
+          "offer": "0% interest for 14 months on purchases, balance transfers and money transfers",
+          "conditions": "2.49% balance-transfer fee and 3.99% money-transfer fee; timing terms apply."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.75,
+        "scope": "foreign-currency transactions",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over, subject to status"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "Clubcard vouchers have an official fixed base conversion; the model uses only credit-card-attributable points where separable.",
+      "ambiguities": [
+        "The network was not explicitly stated in the official pages reviewed.",
+        "At Tesco, headline point totals can combine ordinary Clubcard earnings with incremental credit-card earnings."
+      ]
+    },
+    {
+      "id": "tesco-bank-everyday-low-apr",
+      "issuer": "Tesco Bank",
+      "product_name": "Everyday Low APR Credit Card",
+      "product_url": "https://www.tescobank.com/credit-cards/low-apr-credit-card/",
+      "official_terms_or_summary_url": "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+      "network": null,
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": "Tesco Bank's official charges page states no annual fee for Clubcard Credit Cards.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases outside Tesco",
+          "rate": 1,
+          "unit": "Clubcard point",
+          "per_gbp": 8,
+          "cap": null,
+          "notes": "Points are calculated per transaction."
+        },
+        {
+          "category": "eligible Tesco purchases",
+          "rate": 1,
+          "unit": "additional Clubcard point from the credit card",
+          "per_gbp": 4,
+          "cap": null,
+          "notes": "The linked Clubcard also earns its usual points; the issuer sometimes markets the combined total as 5 points per £4."
+        },
+        {
+          "category": "Tesco fuel excluding Esso",
+          "rate": 1,
+          "unit": "Clubcard point",
+          "per_gbp": 4,
+          "cap": null,
+          "notes": "A separate volume-based Clubcard earn applies; it is not modelled here."
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.01,
+        "type": "fixed voucher conversion",
+        "scope": "100 Clubcard points convert to £1 in Clubcard vouchers; Reward Partner value can differ.",
+        "source_url": "https://www.tescobank.com/credit-cards/"
+      },
+      "introductory_promotions": [],
+      "fx_fee": {
+        "percent": 2.75,
+        "scope": "foreign-currency transactions",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over, subject to status",
+        "Audience: applicants seeking a low ongoing purchase APR rather than a 0% introductory period"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "Clubcard vouchers have an official fixed base conversion; the model uses only credit-card-attributable points where separable.",
+      "ambiguities": [
+        "The network was not explicitly stated in the official pages reviewed.",
+        "At Tesco, headline point totals can combine ordinary Clubcard earnings with incremental credit-card earnings."
+      ]
+    },
+    {
+      "id": "tesco-bank-foundation",
+      "issuer": "Tesco Bank",
+      "product_name": "Foundation Credit Card",
+      "product_url": "https://www.tescobank.com/credit-cards/foundation-credit-card/",
+      "official_terms_or_summary_url": "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+      "network": null,
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": "Tesco Bank's official charges page states no annual fee for Clubcard Credit Cards.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases outside Tesco",
+          "rate": 1,
+          "unit": "Clubcard point",
+          "per_gbp": 8,
+          "cap": null,
+          "notes": "Points are calculated per transaction."
+        },
+        {
+          "category": "eligible Tesco purchases",
+          "rate": 1,
+          "unit": "additional Clubcard point from the credit card",
+          "per_gbp": 4,
+          "cap": null,
+          "notes": "The linked Clubcard also earns its usual points; the issuer sometimes markets the combined total as 5 points per £4."
+        },
+        {
+          "category": "Tesco fuel excluding Esso",
+          "rate": 1,
+          "unit": "Clubcard point",
+          "per_gbp": 4,
+          "cap": null,
+          "notes": "A separate volume-based Clubcard earn applies; it is not modelled here."
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.01,
+        "type": "fixed voucher conversion",
+        "scope": "100 Clubcard points convert to £1 in Clubcard vouchers; Reward Partner value can differ.",
+        "source_url": "https://www.tescobank.com/credit-cards/"
+      },
+      "introductory_promotions": [],
+      "fx_fee": {
+        "percent": 2.75,
+        "scope": "foreign-currency transactions",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK residents aged 18 or over, subject to status",
+        "Audience: people seeking to build or improve their credit history",
+        "Published starting credit-limit range £200 to £1,500"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "Clubcard vouchers have an official fixed base conversion; the model uses only credit-card-attributable points where separable.",
+      "ambiguities": [
+        "The network was not explicitly stated in the official pages reviewed.",
+        "At Tesco, headline point totals can combine ordinary Clubcard earnings with incremental credit-card earnings."
+      ]
+    },
+    {
+      "id": "ms-bank-rewards",
+      "issuer": "HSBC UK Bank plc (trading as M&S Bank)",
+      "product_name": "M&S Rewards Credit Card",
+      "product_url": "https://www.marksandspencer.com/c/money/credit-card/rewards",
+      "official_terms_or_summary_url": "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": "The official M&S Credit Card summary box states no annual fee.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible M&S purchases",
+          "rate": 1,
+          "unit": "M&S Rewards point",
+          "per_gbp": 1,
+          "cap": null
+        },
+        {
+          "category": "eligible purchases elsewhere",
+          "rate": 1,
+          "unit": "M&S Rewards point",
+          "per_gbp": 5,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.01,
+        "type": "fixed M&S voucher conversion",
+        "scope": "200 Rewards points convert to £2 in M&S vouchers, issued quarterly.",
+        "source_url": "https://www.marksandspencer.com/c/money/credit-card/rewards"
+      },
+      "introductory_promotions": [
+        {
+          "offer": "£40 in M&S vouchers after qualifying spend",
+          "conditions": "Spend £150 across at least two M&S transactions in the first three months; offer terms apply."
+        },
+        {
+          "offer": "0% interest on purchases and balance transfers for 9 months",
+          "conditions": "Balance transfers made within 90 days; 3.49% fee, minimum £5."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK resident aged 18 or over with regular annual income",
+        "minimum annual income or pension £6,800",
+        "Sparks membership required to apply",
+        "must not have held an M&S Credit Card within the previous 12 months",
+        "must not have been declined for an M&S Credit Card in the previous 30 days"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "M&S gives a fixed voucher conversion and explicit earn rates.",
+      "ambiguities": []
+    },
+    {
+      "id": "ms-bank-purchase-plus",
+      "issuer": "HSBC UK Bank plc (trading as M&S Bank)",
+      "product_name": "Purchase Plus Credit Card",
+      "product_url": "https://www.marksandspencer.com/c/money/credit-card/purchase-plus",
+      "official_terms_or_summary_url": "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": "The official M&S Credit Card summary box states no annual fee.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases at M&S and elsewhere",
+          "rate": 1,
+          "unit": "M&S Rewards point",
+          "per_gbp": 5,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.01,
+        "type": "fixed M&S voucher conversion",
+        "scope": "200 Rewards points convert to £2 in M&S vouchers, issued quarterly.",
+        "source_url": "https://bank.marksandspencer.com/credit-card/rewards/"
+      },
+      "introductory_promotions": [
+        {
+          "offer": "0% interest on purchases for up to 26 months and balance transfers for up to 6 months",
+          "conditions": "Balance transfers made within 90 days; 3.49% fee, minimum £5. Individual offer length may vary."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK resident aged 18 or over with regular annual income",
+        "minimum annual income or pension £6,800",
+        "must not have held an M&S Credit Card within the previous 12 months",
+        "must not have been declined for an M&S Credit Card in the previous 30 days"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "M&S gives a fixed voucher conversion and explicit earn rate.",
+      "ambiguities": []
+    },
+    {
+      "id": "ms-bank-transfer-plus",
+      "issuer": "HSBC UK Bank plc (trading as M&S Bank)",
+      "product_name": "Transfer Plus Credit Card",
+      "product_url": "https://www.marksandspencer.com/c/money/credit-card/transfer-plus",
+      "official_terms_or_summary_url": "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": "The official M&S Credit Card summary box states no annual fee.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases at M&S and elsewhere",
+          "rate": 1,
+          "unit": "M&S Rewards point",
+          "per_gbp": 5,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.01,
+        "type": "fixed M&S voucher conversion",
+        "scope": "200 Rewards points convert to £2 in M&S vouchers, issued quarterly.",
+        "source_url": "https://bank.marksandspencer.com/credit-card/rewards/"
+      },
+      "introductory_promotions": [
+        {
+          "offer": "0% interest on balance transfers for up to 30 months and purchases for up to 3 months",
+          "conditions": "Balance transfers made within 90 days; 3.49% fee, minimum £5. Individual offer length may vary."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.99,
+        "scope": "non-sterling transactions",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK resident aged 18 or over with regular annual income",
+        "minimum annual income or pension £6,800",
+        "must not have held an M&S Credit Card within the previous 12 months",
+        "must not have been declined for an M&S Credit Card in the previous 30 days"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "M&S gives a fixed voucher conversion and explicit earn rate.",
+      "ambiguities": []
+    },
+    {
+      "id": "john-lewis-partnership-credit-card",
+      "issuer": "NewDay Ltd for John Lewis Money",
+      "product_name": "John Lewis Partnership Credit Card",
+      "product_url": "https://www.johnlewismoney.com/partnership-credit-card",
+      "official_terms_or_summary_url": "https://apply.newdaycards.com/api/summary-box/johnlewis",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "annual_fee_notes": "The lender's official summary box states no annual fee.",
+      "ongoing_rewards": [
+        {
+          "category": "eligible purchases at John Lewis and Waitrose",
+          "rate": 5,
+          "unit": "Partnership Card points",
+          "per_gbp": 4,
+          "cap": null
+        },
+        {
+          "category": "eligible purchases elsewhere",
+          "rate": 1,
+          "unit": "Partnership Card point",
+          "per_gbp": 10,
+          "cap": null
+        }
+      ],
+      "official_fixed_redemption_value": {
+        "gbp_per_point": 0.01,
+        "type": "fixed John Lewis/Waitrose voucher conversion",
+        "scope": "500 points convert to a £5 voucher; vouchers are issued up to three times a year.",
+        "source_url": "https://www.johnlewismoney.com/partnership-credit-card"
+      },
+      "introductory_promotions": [
+        {
+          "offer": "Double points at John Lewis and Waitrose for the first 60 days",
+          "rate": "10 points per £4",
+          "conditions": "New-card promotion and exclusions apply."
+        },
+        {
+          "offer": "£50 John Lewis or Waitrose voucher",
+          "conditions": "For eligible My John Lewis or My Waitrose members who open by 4 January 2027 and spend £250 at John Lewis or Waitrose in the first 45 days; full offer terms apply."
+        }
+      ],
+      "fx_fee": {
+        "percent": 2.95,
+        "scope": "non-sterling transactions",
+        "exceptions": []
+      },
+      "eligibility_audience": [
+        "UK resident aged 18 or over",
+        "at least 12 months of UK address history",
+        "UK mobile number and email address",
+        "must not have held a Partnership Card in the previous 12 months",
+        "My John Lewis or My Waitrose membership is required for the cited £50 welcome offer"
+      ],
+      "publishability": "rankable",
+      "publishability_reason": "The issuer provides explicit earn rates and a fixed voucher conversion.",
+      "ambiguities": []
+    }
+  ]
+}

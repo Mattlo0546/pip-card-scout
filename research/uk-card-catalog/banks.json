@@ -1,0 +1,473 @@
+{
+  "schema_version": "2026-09-28.1",
+  "retrieved_at": "2026-09-28",
+  "scope": "Current UK personal credit-card products from official issuer sources only. Introductory offers are not represented as ongoing rewards.",
+  "publishability_definitions": {
+    "rankable": "The issuer publishes a deterministic ongoing purchase reward that can be represented without inventing a monetary value.",
+    "identity_only": "The product is useful for wallet selection, but must not enter value ranking without additional user state or a reviewed valuation.",
+    "exclude": "Do not publish until the ambiguity in the record is resolved."
+  },
+  "products": [
+    {
+      "id": "barclaycard-rewards",
+      "issuer": "Barclaycard",
+      "product_name": "Barclaycard Rewards card",
+      "product_url": "https://www.barclays.co.uk/credit-cards/reward-cards/barclays-rewards/",
+      "terms_summary_url": "https://www.barclays.co.uk/credit-cards/reward-cards/barclays-rewards/",
+      "network": "Visa",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cashback", "rate": 0.25, "unit": "percent", "categories": ["all_eligible_purchases"], "cap": null, "notes": "Excludes transfers, cash/cash-like and gaming transactions." }
+      ],
+      "introductory_promos": [],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "UK applicants aged 18+; approval depends on financial circumstances and borrowing history.",
+      "publishability": "rankable",
+      "publishability_reason": "Fixed cash value and a single published ongoing rate.",
+      "ambiguities": ["No explicit annual-fee line was exposed on the product page; £0 is inferred from the representative APR having no stated account fee and should be checked against the linked summary before production import."],
+      "sources": ["https://www.barclays.co.uk/credit-cards/reward-cards/barclays-rewards/"]
+    },
+    {
+      "id": "amazon-barclaycard",
+      "issuer": "Barclaycard",
+      "product_name": "The Amazon Barclaycard",
+      "product_url": "https://www.barclays.co.uk/credit-cards/reward-cards/the-amazon-barclaycard/",
+      "terms_summary_url": "https://www.barclays.co.uk/credit-cards/reward-cards/the-amazon-barclaycard/",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "amazon_reward", "rate": 1, "unit": "percent_equivalent", "categories": ["eligible_amazon_channels"], "cap": null, "notes": "Redeem in £5 Amazon Gift Card increments." },
+        { "reward_type": "amazon_reward", "rate": 0.25, "unit": "percent_equivalent", "categories": ["all_other_eligible_purchases"], "cap": null, "notes": "The first-year non-Amazon rate is higher; this is the post-introductory rate." }
+      ],
+      "introductory_promos": [
+        { "type": "reward_rate", "details": "0.5% back on other eligible purchases for the first 12 months, then 0.25%." },
+        { "type": "welcome_gift", "details": "£50 Amazon Gift Card for approved applications made by 13 October 2026; issuer says £20 after that date." },
+        { "type": "purchase_interest", "details": "0% interest on purchases for 6 months from account opening." }
+      ],
+      "fx_fee_percent_on_purchases": null,
+      "eligibility_audience": "UK resident aged 18+; permanently resident at a UK address for at least two years; other credit-history and affordability criteria apply. App-first account.",
+      "publishability": "rankable",
+      "publishability_reason": "The steady-state Amazon and other-purchase reward rates have direct cash-equivalent gift-card values.",
+      "ambiguities": ["Prime-event 2% rewards are event-specific and must be ingested as dated offers, not an ongoing rule.", "Foreign-use fee was not explicit in the retrieved product evidence.", "Official page does not plainly name the scheme network in the retrieved text; network should be confirmed from the summary PDF before import."],
+      "sources": ["https://www.barclays.co.uk/credit-cards/reward-cards/the-amazon-barclaycard/"]
+    },
+    {
+      "id": "barclaycard-avios",
+      "issuer": "Barclaycard",
+      "product_name": "Barclaycard Avios",
+      "product_url": "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios/",
+      "terms_summary_url": "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios/",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "avios", "rate": 1, "unit": "avios_per_gbp", "categories": ["eligible_purchases"], "cap": null, "notes": "Avios redemption value varies." }
+      ],
+      "introductory_promos": [
+        { "type": "welcome_points", "details": "5,000 Avios after £1,000 eligible spend in the first three months for customers new to Barclaycard." }
+      ],
+      "other_benefits": ["Spend £20,000 within 12 months and choose a British Airways cabin upgrade voucher or 7,000 bonus Avios; terms apply."],
+      "fx_fee_percent_on_purchases": null,
+      "eligibility_audience": "UK applicants aged 18+; requires a British Airways Club account (one can be created during application).",
+      "publishability": "identity_only",
+      "publishability_reason": "The earn rate is exact, but the issuer does not provide a fixed pence-per-Avios value suitable for cross-card ranking.",
+      "ambiguities": ["Foreign-use fee not explicit in retrieved product evidence.", "Voucher value and Avios value depend on redemption."],
+      "sources": ["https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios/", "https://www.barclays.co.uk/credit-cards/avios-cards/"]
+    },
+    {
+      "id": "barclaycard-avios-plus",
+      "issuer": "Barclaycard",
+      "product_name": "Barclaycard Avios Plus card",
+      "product_url": "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios-plus/",
+      "terms_summary_url": "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios-plus/",
+      "network": "Mastercard",
+      "annual_fee_gbp": 240,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "avios", "rate": 1.5, "unit": "avios_per_gbp", "categories": ["eligible_purchases"], "cap": null, "notes": "£20 monthly fee; Avios redemption value varies." }
+      ],
+      "introductory_promos": [
+        { "type": "welcome_points", "details": "25,000 Avios after £3,000 eligible spend in the first three months for customers new to Barclaycard." }
+      ],
+      "other_benefits": ["Spend £10,000 within 12 months and choose a British Airways cabin upgrade voucher or 7,000 bonus Avios; terms apply."],
+      "fx_fee_percent_on_purchases": null,
+      "eligibility_audience": "UK applicants aged 18+; requires a British Airways Club account (one can be created during application).",
+      "publishability": "identity_only",
+      "publishability_reason": "The earn rate is exact, but the issuer does not provide a fixed pence-per-Avios value suitable for cross-card ranking.",
+      "ambiguities": ["Foreign-use fee not explicit in retrieved product evidence.", "Voucher value and Avios value depend on redemption."],
+      "sources": ["https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios-plus/", "https://www.barclays.co.uk/credit-cards/avios-cards/"]
+    },
+    {
+      "id": "lloyds-ultra-credit-card",
+      "issuer": "Lloyds Bank",
+      "product_name": "Lloyds Ultra Credit Card",
+      "product_url": "https://www.lloydsbank.com/credit-cards/ultra.html",
+      "terms_summary_url": "https://www.lloydsbank.com/help-guidance/legal-information.html",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cashback", "rate": 0.25, "unit": "percent", "categories": ["eligible_card_purchases"], "cap": null, "notes": "Applies after the first anniversary; paid to the account each January." }
+      ],
+      "introductory_promos": [
+        { "type": "reward_rate", "details": "1% cashback on eligible card purchases during the first year from account opening; 0.25% thereafter." }
+      ],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "UK resident aged 18+ with regular income and no specified recent adverse-credit history.",
+      "publishability": "rankable",
+      "publishability_reason": "Fixed cash value, explicit post-introductory rate and no account fee.",
+      "ambiguities": ["Network is not named in the retrieved product-page text and should be confirmed from the card summary before import."],
+      "sources": ["https://www.lloydsbank.com/credit-cards/ultra.html", "https://www.lloydsbank.com/help-guidance/legal-information.html"]
+    },
+    {
+      "id": "lloyds-world-elite-mastercard",
+      "issuer": "Lloyds Bank",
+      "product_name": "Lloyds World Elite Mastercard®",
+      "product_url": "https://www.lloydsbank.com/credit-cards/mastercard-world-elite.html",
+      "terms_summary_url": "https://www.lloydsbank.com/help-guidance/legal-information.html",
+      "network": "Mastercard",
+      "annual_fee_gbp": 180,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cashback", "rate": 0.5, "unit": "percent", "categories": ["eligible_purchases"], "cap": { "spend_gbp_per_anniversary_year": 15000 }, "notes": "Rate applies to cumulative purchases up to and including £15,000 per anniversary year." },
+        { "reward_type": "cashback", "rate": 1, "unit": "percent", "categories": ["eligible_purchases"], "threshold": { "annual_spend_gbp_over": 15000 }, "notes": "Rate applies to purchases after cumulative anniversary-year spend exceeds £15,000." }
+      ],
+      "introductory_promos": [],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "UK resident aged 18+ with regular income and no specified recent adverse-credit history.",
+      "publishability": "identity_only",
+      "publishability_reason": "Accurate ranking requires the cardholder's current anniversary-year spend, which the extension does not presently know.",
+      "ambiguities": [],
+      "sources": ["https://www.lloydsbank.com/credit-cards/mastercard-world-elite.html", "https://www.lloydsbank.com/help-guidance/legal-information.html"]
+    },
+    {
+      "id": "halifax-cashback-credit-card",
+      "issuer": "Halifax",
+      "product_name": "Halifax Cashback Credit Card",
+      "product_url": "https://www.halifax.co.uk/creditcards/cashback.html",
+      "terms_summary_url": "https://www.halifax.co.uk/creditcards/help-guidance/terms-and-conditions.html",
+      "network": null,
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cashback", "rate": 0.25, "unit": "percent", "categories": ["eligible_card_purchases"], "cap": null, "notes": "Cashback is applied to the account every January." }
+      ],
+      "introductory_promos": [],
+      "fx_fee_percent_on_purchases": 2.95,
+      "eligibility_audience": "UK residents aged 18+; new applications are limited to customers still using the Halifax app during the Halifax-to-Lloyds brand transition.",
+      "publishability": "rankable",
+      "publishability_reason": "Fixed cash value and a single published ongoing rate.",
+      "ambiguities": ["Card network is not stated on the product page.", "Application availability is constrained by the brand migration and should be monitored."],
+      "sources": ["https://www.halifax.co.uk/creditcards/cashback.html", "https://www.halifax.co.uk/creditcards/help-guidance/using-a-credit-card-abroad.html", "https://www.halifax.co.uk/creditcards/help-guidance/terms-and-conditions.html"]
+    },
+    {
+      "id": "halifax-world-elite-mastercard",
+      "issuer": "Halifax",
+      "product_name": "Halifax World Elite Mastercard®",
+      "product_url": "https://www.halifax.co.uk/creditcards/mastercard-world-elite.html",
+      "terms_summary_url": "https://www.halifax.co.uk/creditcards/help-guidance/terms-and-conditions.html",
+      "network": "Mastercard",
+      "annual_fee_gbp": 180,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cashback", "rate": 0.5, "unit": "percent", "categories": ["eligible_purchases"], "cap": { "spend_gbp_per_anniversary_year": 15000 }, "notes": "Rate applies to cumulative purchases up to and including £15,000 per anniversary year." },
+        { "reward_type": "cashback", "rate": 1, "unit": "percent", "categories": ["eligible_purchases"], "threshold": { "annual_spend_gbp_over": 15000 }, "notes": "Rate applies to purchases after cumulative anniversary-year spend exceeds £15,000." }
+      ],
+      "introductory_promos": [],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "UK residents aged 18+; new applications are limited to customers still using the Halifax app during the Halifax-to-Lloyds brand transition.",
+      "publishability": "identity_only",
+      "publishability_reason": "Accurate ranking requires the cardholder's current anniversary-year spend, which the extension does not presently know.",
+      "ambiguities": ["Application availability is constrained by the brand migration and should be monitored."],
+      "sources": ["https://www.halifax.co.uk/creditcards/mastercard-world-elite.html", "https://www.halifax.co.uk/creditcards/help-guidance/terms-and-conditions.html"]
+    },
+    {
+      "id": "bank-of-scotland-advance-credit-card",
+      "issuer": "Bank of Scotland",
+      "product_name": "Bank of Scotland Advance Credit Card",
+      "product_url": "https://www.bankofscotland.co.uk/creditcards/credit-builder.html",
+      "terms_summary_url": "https://www.bankofscotland.co.uk/assets/pdf/credit-cards/summary-box/bank-of-scotland-credit-card.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [],
+      "introductory_promos": [
+        { "type": "payment_behaviour_reward", "details": "£20 reward for making payments on time during the first six months; offer terms apply. This is not a purchase reward." }
+      ],
+      "fx_fee_percent_on_purchases": 2.95,
+      "eligibility_audience": "UK resident aged 18+; Lloyds Banking Group bank account open for over one year; yearly income of at least £6,000; credit-builder audience.",
+      "publishability": "identity_only",
+      "publishability_reason": "Active product with no deterministic ongoing purchase reward.",
+      "ambiguities": ["The generic Bank of Scotland summary box may not be specific to the Advance variant; verify card-specific pricing before production import."],
+      "sources": ["https://www.bankofscotland.co.uk/creditcards/credit-builder.html", "https://www.bankofscotland.co.uk/assets/pdf/credit-cards/summary-box/bank-of-scotland-credit-card.pdf"]
+    },
+    {
+      "id": "natwest-reward-black-credit-card",
+      "issuer": "NatWest",
+      "product_name": "Reward Black credit card",
+      "product_url": "https://www.natwest.com/credit-cards/reward-black-credit-card.html",
+      "terms_summary_url": "https://www.natwest.com/credit-cards/reward-black-credit-card.html",
+      "network": "Mastercard",
+      "annual_fee_gbp": 84,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cash_equivalent_rewards", "rate": 1, "unit": "percent", "categories": ["supermarkets"], "cap": null, "notes": "Supermarket MCC classification applies." },
+        { "reward_type": "cash_equivalent_rewards", "rate": 0.5, "unit": "percent", "categories": ["supermarket_petrol", "all_other_eligible_purchases"], "cap": null, "notes": "Partner-retailer rates are variable offers and are not encoded here." }
+      ],
+      "introductory_promos": [],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "UK resident aged 18+ earning at least £15,000 a year; annual fee refunded for Reward Black current-account holders.",
+      "publishability": "rankable",
+      "publishability_reason": "Deterministic cash-equivalent rates by published category; account-specific fee waiver is metadata rather than a purchase reward.",
+      "ambiguities": ["Whether the £84 fee is refunded depends on a separate current-account relationship."],
+      "sources": ["https://www.natwest.com/credit-cards/reward-black-credit-card.html", "https://www.natwest.com/myrewards/terms-and-exclusions.html"]
+    },
+    {
+      "id": "natwest-travel-reward-credit-card",
+      "issuer": "NatWest",
+      "product_name": "Travel Reward credit card",
+      "product_url": "https://www.natwest.com/credit-cards/travel-reward-credit-card.html",
+      "terms_summary_url": "https://www.natwest.com/credit-cards/travel-reward-credit-card.html",
+      "network": "Visa",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cash_equivalent_rewards", "rate": 1, "unit": "percent", "categories": ["eligible_travel_mccs"], "cap": null, "notes": "Includes published airline, rail, ferry, bus, car-rental, taxi, hotel, campsite, travel-agent and cruise MCCs." },
+        { "reward_type": "cash_equivalent_rewards", "rate": 0.1, "unit": "percent", "categories": ["all_other_eligible_purchases"], "cap": null, "notes": "Partner-retailer rates are variable offers and are not encoded here." }
+      ],
+      "introductory_promos": [],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "UK resident aged 18+ earning at least £10,000 a year.",
+      "publishability": "rankable",
+      "publishability_reason": "Deterministic cash-equivalent rates with issuer-published travel MCC definitions.",
+      "ambiguities": ["Individual merchants can be assigned unexpected MCCs, especially outside the UK."],
+      "sources": ["https://www.natwest.com/credit-cards/travel-reward-credit-card.html", "https://www.natwest.com/myrewards/terms-and-exclusions.html"]
+    },
+    {
+      "id": "rbs-reward-credit-card",
+      "issuer": "Royal Bank of Scotland",
+      "product_name": "Reward credit card",
+      "product_url": "https://www.rbs.co.uk/credit-cards/reward-credit-card.html",
+      "terms_summary_url": "https://www.rbs.co.uk/credit-cards/reward-credit-card/summary-box.html",
+      "network": "Mastercard",
+      "annual_fee_gbp": 24,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cash_equivalent_rewards", "rate": 1, "unit": "percent", "categories": ["supermarkets"], "cap": null, "notes": "Supermarket MCC classification applies." },
+        { "reward_type": "cash_equivalent_rewards", "rate": 0.25, "unit": "percent", "categories": ["supermarket_petrol", "all_other_eligible_purchases"], "cap": null, "notes": "Partner-retailer rates are variable offers and are not encoded here." }
+      ],
+      "introductory_promos": [],
+      "fx_fee_percent_on_purchases": null,
+      "eligibility_audience": "UK resident aged 18+ earning at least £10,000 a year; annual fee refunded for Reward current-account holders.",
+      "publishability": "rankable",
+      "publishability_reason": "Deterministic cash-equivalent rates by published category.",
+      "ambiguities": ["The product page describes a foreign exchange fee but does not give the exact percentage in the retrieved evidence.", "Whether the £24 fee is refunded depends on a separate current-account relationship."],
+      "sources": ["https://www.rbs.co.uk/credit-cards/reward-credit-card.html", "https://www.rbs.co.uk/credit-cards/reward-credit-card/summary-box.html", "https://www.rbs.co.uk/myrewards/terms-and-exclusions.html"]
+    },
+    {
+      "id": "rbs-reward-black-credit-card",
+      "issuer": "Royal Bank of Scotland",
+      "product_name": "Reward Black credit card",
+      "product_url": "https://www.rbs.co.uk/credit-cards/reward-black-credit-card.html",
+      "terms_summary_url": "https://www.rbs.co.uk/credit-cards/reward-black-credit-card.html",
+      "network": "Mastercard",
+      "annual_fee_gbp": 84,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cash_equivalent_rewards", "rate": 1, "unit": "percent", "categories": ["supermarkets"], "cap": null, "notes": "Supermarket MCC classification applies." },
+        { "reward_type": "cash_equivalent_rewards", "rate": 0.5, "unit": "percent", "categories": ["supermarket_petrol", "all_other_eligible_purchases"], "cap": null, "notes": "Partner-retailer rates are variable offers and are not encoded here." }
+      ],
+      "introductory_promos": [],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "UK resident aged 18+ earning at least £15,000 a year; annual fee refunded for Reward Black current-account holders.",
+      "publishability": "rankable",
+      "publishability_reason": "Deterministic cash-equivalent rates by published category.",
+      "ambiguities": ["Whether the £84 fee is refunded depends on a separate current-account relationship."],
+      "sources": ["https://www.rbs.co.uk/credit-cards/reward-black-credit-card.html", "https://www.rbs.co.uk/myrewards/terms-and-exclusions.html"]
+    },
+    {
+      "id": "hsbc-rewards-credit-card",
+      "issuer": "HSBC UK",
+      "product_name": "Rewards Credit Card",
+      "product_url": "https://www.hsbc.co.uk/credit-cards/products/rewards/",
+      "terms_summary_url": "https://www.hsbc.co.uk/credit-cards/compare/rewards-credit-card/",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "hsbc_reward_points", "rate": 1, "unit": "points_per_5_gbp", "categories": ["all_other_eligible_purchases"], "cap": null, "notes": "Issuer examples state 2,500 points are worth £25 when used through Mastercard Pay with Rewards." },
+        { "reward_type": "hsbc_reward_points", "rate": 10, "unit": "up_to_points_per_gbp", "categories": ["selected_retailers"], "cap": null, "notes": "Selected-retailer list and rates are dynamic; do not rank this tier without a current activated-offer feed." }
+      ],
+      "introductory_promos": [
+        { "type": "welcome_points", "details": "2,500 points, stated as worth £25, after the first eligible transaction." },
+        { "type": "purchase_interest", "details": "0% on purchases for 6 months from account opening." },
+        { "type": "balance_transfer_interest", "details": "0% for 6 months on balance transfers made within 60 days; 2.99% fee, minimum £5." }
+      ],
+      "other_benefits": ["2,500 anniversary points after £10,000+ eligible annual spend in each of the first five years."],
+      "fx_fee_percent_on_purchases": null,
+      "eligibility_audience": "UK resident aged over 18 with at least £6,800 annual UK taxable income or pension; must not hold an HSBC Basic Bank Account.",
+      "publishability": "rankable",
+      "publishability_reason": "The baseline earn rate and issuer-stated cash-equivalent point value can be represented; dynamic selected-retailer rates must be excluded from baseline ranking.",
+      "ambiguities": ["The welcome-bonus value implies 1p per point, but a production import should verify that this is also the redemption value for all Mastercard Pay with Rewards transactions.", "Exact non-sterling fee was not shown in the retrieved product evidence."],
+      "sources": ["https://www.hsbc.co.uk/credit-cards/products/rewards/", "https://www.hsbc.co.uk/credit-cards/rewards/", "https://www.hsbc.co.uk/credit-cards/compare/rewards-credit-card/"]
+    },
+    {
+      "id": "hsbc-premier-credit-card",
+      "issuer": "HSBC UK",
+      "product_name": "Premier Credit Card",
+      "product_url": "https://www.hsbc.co.uk/credit-cards/products/premier/",
+      "terms_summary_url": "https://www.hsbc.co.uk/credit-cards/products/premier/",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "hsbc_reward_points", "rate": 1.5, "unit": "points_per_gbp", "categories": ["sterling_eligible_purchases"], "cap": null, "notes": "Redemption value varies by reward option." },
+        { "reward_type": "hsbc_reward_points", "rate": 2, "unit": "points_per_gbp", "categories": ["non_sterling_eligible_purchases"], "cap": null, "notes": "2.99% non-sterling transaction fee applies." }
+      ],
+      "introductory_promos": [
+        { "type": "welcome_points", "details": "30,000 points after £2,000 eligible spend in the first 90 days; offer shown as ending 1 December 2026." }
+      ],
+      "fx_fee_percent_on_purchases": 2.99,
+      "eligibility_audience": "HSBC Premier Bank Account customers only; Premier financial and other eligibility criteria apply.",
+      "publishability": "identity_only",
+      "publishability_reason": "Issuer publishes earn rates but not one fixed pence-per-point value across vouchers, airline miles and hotel transfers.",
+      "ambiguities": ["Reward value depends on redemption partner and transfer ratio."],
+      "sources": ["https://www.hsbc.co.uk/credit-cards/products/premier/", "https://www.hsbc.co.uk/credit-cards/rewards/"]
+    },
+    {
+      "id": "hsbc-premier-world-elite-mastercard",
+      "issuer": "HSBC UK",
+      "product_name": "Premier World Elite Mastercard",
+      "product_url": "https://www.hsbc.co.uk/credit-cards/products/premier-world-elite/",
+      "terms_summary_url": "https://www.hsbc.co.uk/credit-cards/products/premier-world-elite/",
+      "network": "Mastercard",
+      "annual_fee_gbp": 290,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "hsbc_reward_points", "rate": 3, "unit": "points_per_gbp", "categories": ["sterling_eligible_purchases"], "cap": null, "notes": "Redemption value varies by reward option." },
+        { "reward_type": "hsbc_reward_points", "rate": 4, "unit": "points_per_gbp", "categories": ["non_sterling_eligible_purchases"], "cap": null, "notes": "2.99% non-sterling transaction fee applies." }
+      ],
+      "introductory_promos": [
+        { "type": "welcome_points", "details": "70,000 points after £2,000 eligible spend in the first 90 days; offer shown as ending 1 December 2026." }
+      ],
+      "fx_fee_percent_on_purchases": 2.99,
+      "eligibility_audience": "HSBC Premier Bank Account customers only; Premier financial and other eligibility criteria apply.",
+      "publishability": "identity_only",
+      "publishability_reason": "Issuer publishes earn rates but not one fixed pence-per-point value across vouchers, airline miles and hotel transfers.",
+      "ambiguities": ["Reward value depends on redemption partner and transfer ratio."],
+      "sources": ["https://www.hsbc.co.uk/credit-cards/products/premier-world-elite/", "https://www.hsbc.co.uk/credit-cards/rewards/"]
+    },
+    {
+      "id": "santander-rewards-credit-card",
+      "issuer": "Santander UK",
+      "product_name": "Rewards Credit Card",
+      "product_url": "https://www.santander.co.uk/personal/credit-cards/santander-rewards-credit-card",
+      "terms_summary_url": "https://www.santander.co.uk/assets/s3fs-public/AD_documents/Santander_Rewards_Credit_Card_Key_Facts_Document_ACSMC1132_500727010.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cashback", "rate": 0.25, "unit": "percent", "categories": ["all_eligible_purchases"], "cap": null, "notes": "This is the rate after the first 12 months and the fallback rate during year one." }
+      ],
+      "introductory_promos": [
+        { "type": "reward_rate", "details": "3% cashback during the first 12 months on eligible petrol/EV charging, everyday travel, restaurants, cafes and takeaways, based on published MCCs; 0.25% elsewhere." },
+        { "type": "welcome_voucher", "details": "Up to £40 in Uber vouchers for qualifying customers new to Santander; offer may be withdrawn." }
+      ],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "Permanent UK resident aged 18+; general Santander eligibility page states guaranteed annual income of at least £10,500 and credit criteria.",
+      "publishability": "rankable",
+      "publishability_reason": "Fixed ongoing cash value; first-year category bonus is separately dated and requires account-open date.",
+      "ambiguities": ["Year-one MCC classification can differ from the apparent merchant category, especially overseas."],
+      "sources": ["https://www.santander.co.uk/personal/credit-cards/santander-rewards-credit-card", "https://www.santander.co.uk/assets/s3fs-public/AD_documents/Santander_Rewards_Credit_Card_Key_Facts_Document_ACSMC1132_500727010.pdf", "https://www.santander.co.uk/personal/credit-cards"]
+    },
+    {
+      "id": "santander-all-in-one-credit-card",
+      "issuer": "Santander UK",
+      "product_name": "All in One Credit Card",
+      "product_url": "https://www.santander.co.uk/personal/credit-cards/all-in-one-credit-card",
+      "terms_summary_url": "https://www.santander.co.uk/assets/s3fs-public/documents/all-in-one-credit-card-key-facts-document.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 36,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cashback", "rate": 0.5, "unit": "percent", "categories": ["all_eligible_purchases"], "cap": { "cashback_gbp_per_month": 10 }, "notes": "£3 monthly account fee." }
+      ],
+      "introductory_promos": [
+        { "type": "purchase_interest", "details": "0% interest on purchases for 15 months from account opening." },
+        { "type": "balance_transfer_interest", "details": "0% for 15 months from account opening with no balance-transfer fee." }
+      ],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "Permanent UK resident aged 18+ with annual income of at least £10,500; credit-history criteria apply.",
+      "publishability": "rankable",
+      "publishability_reason": "Fixed cash value with a precise monthly cap and account fee.",
+      "ambiguities": [],
+      "sources": ["https://www.santander.co.uk/personal/credit-cards/all-in-one-credit-card", "https://www.santander.co.uk/assets/s3fs-public/documents/all-in-one-credit-card-key-facts-document.pdf"]
+    },
+    {
+      "id": "santander-world-elite-mastercard",
+      "issuer": "Santander UK",
+      "product_name": "Santander World Elite™ Mastercard®",
+      "product_url": "https://www.santander.co.uk/personal/credit-cards/santander-world-elite-mastercard",
+      "terms_summary_url": "https://www.santander.co.uk/personal/credit-cards/santander-world-elite-mastercard",
+      "network": "Mastercard",
+      "annual_fee_gbp": 180,
+      "ongoing_purchase_rewards": [
+        { "reward_type": "cashback", "rate": 0.5, "unit": "percent", "categories": ["all_eligible_purchases"], "cap": { "cashback_gbp_per_month": 15, "equivalent_spend_gbp_per_month": 3000 }, "notes": "£15 monthly account fee." }
+      ],
+      "introductory_promos": [
+        { "type": "purchase_interest", "details": "0% interest on purchases and balance transfers for 18 months with no balance-transfer fee." },
+        { "type": "welcome_cashback", "details": "A separate £90 acquisition offer was displayed for qualifying Select/Private customers; it may be withdrawn and must not be treated as ongoing cashback." }
+      ],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "Santander Select or Private Banking customers who are permanent UK residents aged 18+; credit criteria apply.",
+      "publishability": "rankable",
+      "publishability_reason": "Fixed cash value with a precise monthly cap and account fee.",
+      "ambiguities": ["The separate £90 acquisition offer has no firm end date and requires live availability checking."],
+      "sources": ["https://www.santander.co.uk/personal/credit-cards/santander-world-elite-mastercard", "https://www.santander.co.uk/landing/World-Elite-Mastercard-Offer"]
+    },
+    {
+      "id": "nationwide-member-credit-card",
+      "issuer": "Nationwide Building Society",
+      "product_name": "Member Credit Card",
+      "product_url": "https://www.nationwide.co.uk/credit-cards",
+      "terms_summary_url": "https://www.nationwide.co.uk/credit-cards/help/terms",
+      "network": "Visa",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [],
+      "introductory_promos": [
+        { "type": "purchase_and_balance_transfer_choice", "details": "Current page offers a purchase-and-balance-transfer variant with 0% on each for 15 months, or a balance-transfer variant with 0% transfers for 30 months and purchases for 3 months." }
+      ],
+      "fx_fee_percent_on_purchases": 0,
+      "eligibility_audience": "Existing Nationwide member with a current account, savings account or mortgage; application and credit criteria apply.",
+      "publishability": "identity_only",
+      "publishability_reason": "Active product with no deterministic ongoing purchase reward; its benefit is commission-free foreign purchases.",
+      "ambiguities": ["Applicants choose between two introductory variants; this does not affect ongoing rewards ranking."],
+      "sources": ["https://www.nationwide.co.uk/credit-cards", "https://www.nationwide.co.uk/credit-cards/help/terms", "https://www.nationwide.co.uk/help/travel/charges-using-your-card-abroad"]
+    },
+    {
+      "id": "tsb-platinum-purchase-card",
+      "issuer": "TSB",
+      "product_name": "Platinum Purchase Card",
+      "product_url": "https://www.tsb.co.uk/credit-cards/purchases.html",
+      "terms_summary_url": "https://www.tsb.co.uk/credit-card/platinum-purchase-card-summary.pdf",
+      "network": "Mastercard",
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [],
+      "introductory_promos": [
+        { "type": "purchase_interest", "details": "0% interest on purchases for up to 26 months; individual offer length varies." },
+        { "type": "balance_transfer_interest", "details": "0% on balance transfers for up to 18 months when made in the first 90 days; 3.49% introductory transfer fee." }
+      ],
+      "fx_fee_percent_on_purchases": 2.95,
+      "eligibility_audience": "UK resident aged over 18 with regular income and no specified recent adverse-credit events.",
+      "publishability": "identity_only",
+      "publishability_reason": "Active product with no deterministic ongoing purchase reward.",
+      "ambiguities": ["Promotional periods vary by applicant."],
+      "sources": ["https://www.tsb.co.uk/credit-cards/purchases.html", "https://www.tsb.co.uk/credit-card/platinum-purchase-card-summary.pdf", "https://www.tsb.co.uk/credit-cards/credit-card-comparison.html"]
+    },
+    {
+      "id": "mbna-dual-zero-transfer-purchase-credit-card",
+      "issuer": "MBNA",
+      "product_name": "MBNA Dual 0% Transfer and Purchase Credit Card",
+      "product_url": "https://www.mbna.co.uk/credit-cards/purchase-credit-cards.html",
+      "terms_summary_url": "https://www.mbna.co.uk/assets/pdfs/summary-box/balance-transfer-and-purchase.pdf",
+      "network": null,
+      "annual_fee_gbp": 0,
+      "ongoing_purchase_rewards": [],
+      "introductory_promos": [
+        { "type": "purchase_interest", "details": "0% on purchases made in the first 60 days for up to 22 months; individual offer length varies." },
+        { "type": "balance_transfer_interest", "details": "0% on balance transfers made in the first 60 days for up to 24 months; individual offer and fee vary." },
+        { "type": "money_transfer_interest", "details": "0% on money transfers made in the first 60 days for up to 9 months; individual offer and fee vary." }
+      ],
+      "fx_fee_percent_on_purchases": null,
+      "eligibility_audience": "UK resident aged 18+ with regular income; specified adverse-credit and recent-decline exclusions apply. The eligibility checker determines the actual available offer.",
+      "publishability": "identity_only",
+      "publishability_reason": "No deterministic ongoing purchase reward; Smart Rewards are personalised, activation-based merchant offers with variable rates.",
+      "ambiguities": ["MBNA does not show a universal public card list and may personalise the product offered.", "Card network and foreign-use fee were not explicit in retrieved evidence.", "Smart Rewards cannot be ranked without the user's live activated offers."],
+      "sources": ["https://www.mbna.co.uk/credit-cards/purchase-credit-cards.html", "https://www.mbna.co.uk/assets/pdfs/summary-box/balance-transfer-and-purchase.pdf", "https://www.mbna.co.uk/online-services/profile-and-settings/smart-rewards.html"]
+    }
+  ]
+}

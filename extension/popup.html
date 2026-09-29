@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pip wallet</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><b>p</b></span>
+          <span><strong>Pip</strong><small>Your card scout</small></span>
+        </div>
+        <span class="security-stamp"><i></i> LIVE BETA</span>
+      </header>
+
+      <section id="loading-view" class="loading-view" aria-live="polite">
+        <span class="loading-bot" aria-hidden="true"><i></i><i></i></span>
+        <p>Opening your wallet…</p>
+      </section>
+
+      <section id="auth-view" class="auth-view" hidden>
+        <p class="eyebrow">YOUR WALLET, NOT YOUR CARD VAULT</p>
+        <h1>Know the right card.<br /><em>Keep the numbers private.</em></h1>
+        <p class="auth-intro">Pip stores the card products you own, plus an optional nickname and last four. Chrome Autofill keeps every payment credential.</p>
+
+        <form id="auth-form" class="auth-form">
+          <label>Email<input id="auth-email" name="email" type="email" autocomplete="email" required /></label>
+          <label>Password<input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="8" required /></label>
+          <button id="auth-submit" class="primary-button" type="submit">Sign in</button>
+        </form>
+        <button id="auth-mode" class="text-button" type="button">New to Pip? Create an account</button>
+        <p id="auth-status" class="form-status" role="status" aria-live="polite"></p>
+
+        <aside class="privacy-card">
+          <span aria-hidden="true">◎</span>
+          <p><strong>No PAN. No CVC. No expiry.</strong> Pip cannot read Chrome’s saved-card list and never asks for those details.</p>
+        </aside>
+      </section>
+
+      <section id="wallet-view" hidden>
+        <section class="checkout-card" aria-labelledby="checkout-title">
+          <div class="checkout-meta">
+            <p class="eyebrow">CURRENT CHECKOUT</p>
+            <span id="confidence-chip" class="confidence-chip" hidden></span>
+          </div>
+          <h1 id="checkout-title">Reading this page…</h1>
+          <p id="checkout-detail" class="checkout-detail">Looking for a checkout total and merchant category.</p>
+          <button id="run-pip" class="run-button" type="button" disabled>
+            <span class="run-bot" aria-hidden="true"><i></i><i></i></span>
+            <span class="run-copy"><strong>Find my best card</strong><small>Compare current reward rules</small></span>
+            <span class="run-arrow" aria-hidden="true">→</span>
+          </button>
+          <p id="run-status" class="form-status run-status" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="wallet-section" aria-labelledby="wallet-heading">
+          <div class="section-heading">
+            <div><p class="eyebrow">YOUR PIP WALLET</p><h2 id="wallet-heading">Cards you can choose</h2></div>
+            <span id="enabled-count" class="count-pill"></span>
+          </div>
+          <div id="card-list" class="card-list"></div>
+
+          <details id="add-card-panel" class="add-card-panel">
+            <summary><span>Add a card product</span><b>+</b></summary>
+            <form id="add-card-form" class="add-card-form">
+              <label>Card product<select id="product-select" name="productId" required></select></label>
+              <div class="field-pair">
+                <label>Nickname <small>optional</small><input id="card-nickname" name="nickname" maxlength="40" placeholder="Daily card" /></label>
+                <label>Last four <small>optional</small><input id="card-last-four" name="lastFour" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="1234" /></label>
+              </div>
+              <button id="add-card-button" class="secondary-button" type="submit">Add to wallet</button>
+              <p id="wallet-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </details>
+        </section>
+
+        <section class="preferences">
+          <label class="preference-row">
+            <span><strong>Save decision history</strong><small>Off by default. Saves merchant, total and result to your private account.</small></span>
+            <input id="history-toggle" type="checkbox" role="switch" /><i aria-hidden="true"></i>
+          </label>
+        </section>
+
+        <section class="activity-section" aria-labelledby="activity-heading">
+          <div class="section-heading">
+            <div><p class="eyebrow">PRIVATE LEDGER</p><h2 id="activity-heading">Recent decisions</h2></div>
+          </div>
+          <div id="activity-list" class="activity-list"></div>
+        </section>
+
+        <footer class="account-footer">
+          <span><small>Signed in as</small><strong id="account-email"></strong></span>
+          <span class="account-actions">
+            <button id="sign-out" type="button">Sign out</button>
+            <button id="delete-account" class="danger-button" type="button">Delete account</button>
+          </span>
+        </footer>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

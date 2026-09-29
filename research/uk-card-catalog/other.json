@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "market": "GB",
+  "currency": "GBP",
+  "retrieved_at": "2026-09-28",
+  "source_policy": "Official issuer, programme, or merchant sources only. A missing benefit is not inferred to be zero unless the official product page makes the proposition sufficiently explicit.",
+  "publishability_definitions": {
+    "rankable": "Current card with sufficiently explicit, deterministic purchase value or FX treatment for at least one checkout scenario.",
+    "identity_only": "Current or existing-customer product that can be offered in wallet search, but whose variable, personalised, or incompletely published terms should not drive a recommendation.",
+    "exclude": "Closed programme or not a general-purpose personal credit card."
+  },
+  "products": [
+    {
+      "id": "capital-one-classic",
+      "issuer": "Capital One (Europe) plc",
+      "name": "Capital One Classic Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.capitalone.co.uk/creditcards/credit-cards",
+      "terms_url": "https://www.capitalone.co.uk/creditcards/credit-builder-credit-cards",
+      "network": null,
+      "annual_fee": { "amount_gbp": 0, "source_url": "https://www.capitalone.co.uk/blog/credit-card-fees-explained" },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "UK residents aged 18 or over; positioned for everyday spending and building credit, with £200-£4,000 starting limits. Capital One says applicants are more likely to be accepted with some UK credit history and electoral-roll registration.",
+      "publishability": "rankable",
+      "ambiguities": [
+        "Capital One says its UK cards have no annual fee, but the non-sterling transaction fee varies by card agreement.",
+        "No ongoing purchase reward is advertised on the official product page; model ordinary domestic purchase value as zero rather than inventing a benefit."
+      ]
+    },
+    {
+      "id": "capital-one-balance-transfer",
+      "issuer": "Capital One (Europe) plc",
+      "name": "Capital One Balance Transfer Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.capitalone.co.uk/creditcards/credit-cards",
+      "terms_url": "https://www.capitalone.co.uk/creditcards/applying-for-a-credit-card",
+      "network": null,
+      "annual_fee": { "amount_gbp": 0, "source_url": "https://www.capitalone.co.uk/blog/credit-card-fees-explained" },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [
+        { "type": "balance_transfer_apr", "value": "0% for up to 18 months", "fee": "up to 3%", "personalised": true },
+        { "type": "purchase_apr", "value": "0% for 3 months", "personalised": true }
+      ],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "UK residents; Capital One says stronger indicators include age 21+, prior credit-card history, home ownership and annual income above £20,000, while the actual offer is eligibility-dependent.",
+      "publishability": "rankable",
+      "ambiguities": [
+        "The promotional duration and transfer fee are personalised ('up to'), so they must not be represented as guaranteed.",
+        "No ongoing purchase reward is advertised; the non-sterling transaction fee is agreement-specific."
+      ]
+    },
+    {
+      "id": "aqua-classic",
+      "issuer": "NewDay Ltd",
+      "name": "Aqua Classic",
+      "status": "open_to_applications",
+      "product_url": "https://www.aquacard.co.uk/credit-cards/aqua-classic",
+      "terms_url": "https://www.aquacard.co.uk/credit-cards/aqua-classic",
+      "network": "Mastercard",
+      "annual_fee": { "amount_gbp": 0 },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "UK residents aged 18+ with a UK bank/building-society account; designed to build or repair credit. Official exclusions include recent bankruptcy/ongoing bankruptcy, a CCJ in the prior 12 months, an existing Aqua card, or certain recent NewDay cards.",
+      "publishability": "rankable",
+      "ambiguities": [
+        "A separate Aqua balance-transfer landing page resolves back to Aqua Classic and shows personalised terms, so it is not treated as a distinct durable product identity.",
+        "No ongoing purchase reward is advertised on the current Aqua Classic page."
+      ]
+    },
+    {
+      "id": "vanquis-credit-builder",
+      "issuer": "Vanquis Bank Limited",
+      "name": "Vanquis Credit Builder Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.vanquis.com/credit-cards/",
+      "terms_url": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "network": null,
+      "annual_fee": null,
+      "ongoing_purchase_rewards": [
+        { "type": "merchant_cashback", "rate": null, "scope": "selected retailers", "deterministic": false }
+      ],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "Permanent UK residents aged 18+ with regular income; positioned for building credit, with a personalised £250-£2,500 limit. Existing Vanquis cards/applications, bankruptcy or an active IVA are disqualifying on the comparison page.",
+      "publishability": "identity_only",
+      "ambiguities": ["The official page advertises cashback with selected retailers but does not publish stable merchant rates, caps, or offer dates."]
+    },
+    {
+      "id": "vanquis-purchase",
+      "issuer": "Vanquis Bank Limited",
+      "name": "Vanquis Purchase Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.vanquis.com/credit-cards/",
+      "terms_url": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "network": null,
+      "annual_fee": null,
+      "ongoing_purchase_rewards": [
+        { "type": "merchant_cashback", "rate": null, "scope": "selected retailers", "deterministic": false }
+      ],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [
+        { "type": "purchase_apr", "value": "0% for up to 9 months", "qualification": "purchase must be made in first 3 months", "personalised": true }
+      ],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "Permanent UK residents aged 18+ with regular income; positioned for spreading larger purchases, with a personalised £250-£2,500 limit.",
+      "publishability": "identity_only",
+      "ambiguities": ["The purchase offer and APR are personalised, and selected-retailer cashback lacks stable published earning rules."]
+    },
+    {
+      "id": "vanquis-balance-transfer",
+      "issuer": "Vanquis Bank Limited",
+      "name": "Vanquis Balance Transfer Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.vanquis.com/credit-cards/",
+      "terms_url": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "network": null,
+      "annual_fee": null,
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [
+        { "type": "balance_transfer_apr", "value": "0% for up to 19 months", "qualification": "transfer within 60 days", "example_fee": "3.9%", "personalised": true },
+        { "type": "purchase_apr", "value": "0% for 3 months", "personalised": true }
+      ],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "Permanent UK residents aged 18+ with regular income; positioned for consolidating balances, with a personalised £250-£7,000 limit.",
+      "publishability": "rankable",
+      "ambiguities": ["Promotion length, APR, limit, and the actual balance-transfer fee can vary by applicant; the 3.9% fee is presented as an example, not a universal term."]
+    },
+    {
+      "id": "vanquis-low-apr-balance-transfer",
+      "issuer": "Vanquis Bank Limited",
+      "name": "Vanquis Low APR Balance Transfer Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.vanquis.com/credit-cards/",
+      "terms_url": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "network": null,
+      "annual_fee": null,
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [
+        { "type": "balance_transfer_apr", "value": "9.9% or 12.9% for up to 36 months", "qualification": "transfer within 60 days", "personalised": true }
+      ],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "Permanent UK residents aged 18+ with regular income; personalised £250-£7,000 limit and balance-transfer offer.",
+      "publishability": "rankable",
+      "ambiguities": ["The offered 9.9% or 12.9% rate, duration, APR and limit are eligibility-dependent."]
+    },
+    {
+      "id": "vanquis-travel",
+      "issuer": "Vanquis Bank Limited",
+      "name": "Vanquis Travel Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.vanquis.com/credit-cards/travel-credit-card/",
+      "terms_url": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "network": "Visa",
+      "annual_fee": null,
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": 0,
+      "eligibility_audience": "Permanent UK residents aged 18+ with regular income; personalised £250-£2,500 limit. Positioned for home and overseas spending.",
+      "publishability": "rankable",
+      "ambiguities": ["Zero foreign transaction fees applies to overseas purchase and cash transactions, but cash-withdrawal fees of up to 5% or £3 may still apply. SmartDelay and AirRefund are third-party benefits that may change."]
+    },
+    {
+      "id": "zable-credit-card",
+      "issuer": "Lendable Limited (credit provider/programme manager); Transact Payments Limited (payment-card issuer)",
+      "name": "Zable Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://zable.co.uk/cards",
+      "terms_url": "https://zable.co.uk/cards",
+      "network": null,
+      "annual_fee": { "amount_gbp": 0, "source_url": "https://app.zable.co.uk/cards/first-credit-card" },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": 0,
+      "eligibility_audience": "UK residents over 18 who do not already hold a Zable card and have monthly income above £800; Zable also publishes additional credit-history/current-account criteria on its eligibility page.",
+      "publishability": "identity_only",
+      "ambiguities": ["The range page mentions a Zable+ card with higher limits/lower APR, but does not expose sufficiently distinct public reward or fee rules to model it as a separate checkout product. No ongoing purchase reward is advertised for the Zable card itself."]
+    },
+    {
+      "id": "yonder-free-credit",
+      "issuer": "Yonder Technology Ltd",
+      "name": "Yonder Free Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.yonder.com/credit-cards/free-credit-card",
+      "terms_url": "https://www.yonder.com/docs/uk-rewards-terms-conditions-2-2",
+      "network": "Mastercard",
+      "annual_fee": { "amount_gbp": 0 },
+      "ongoing_purchase_rewards": [
+        { "type": "points", "rate": 1, "unit": "point_per_gbp", "scope": "eligible purchases" },
+        { "type": "points", "rate": "up to 5", "unit": "points_per_gbp", "scope": "selected Yonder rewards", "deterministic": false }
+      ],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [
+        { "type": "welcome_points", "value": 2000, "qualification": "spend £1,000 in first 30 days", "personalised": true },
+        { "type": "rent_mortgage_points", "value": "1,000 points monthly until 31 December 2026; advertised standard rate afterwards is 200 points monthly", "new_customers_only": true }
+      ],
+      "foreign_transaction_fee_percent": 0,
+      "eligibility_audience": "UK residents aged 18+ subject to credit approval.",
+      "publishability": "identity_only",
+      "ambiguities": ["Free members cannot redeem points for the fixed cash-equivalent credit described in the rewards terms. Experience redemption cost and value vary in-app, so a universal cash value must not be assigned."]
+    },
+    {
+      "id": "yonder-premium-credit",
+      "issuer": "Yonder Technology Ltd",
+      "name": "Yonder Premium Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.yonder.com/credit-cards/premium-credit-card",
+      "terms_url": "https://www.yonder.com/docs/uk-rewards-terms-conditions-2-2",
+      "network": "Mastercard",
+      "annual_fee": { "amount_gbp": 215.88, "billing": "£17.99 monthly", "annual_option_gbp": 190 },
+      "ongoing_purchase_rewards": [
+        { "type": "points", "rate": 5, "unit": "points_per_gbp", "scope": "eligible purchases" },
+        { "type": "points", "rate": "up to 25", "unit": "points_per_gbp", "scope": "selected Yonder rewards", "deterministic": false }
+      ],
+      "fixed_redemption_value": { "value_gbp_per_point": 0.001, "basis": "100,000 points = £100 account credit for Full/Premium members", "effective_base_return_percent": 0.5 },
+      "introductory_promotions": [
+        { "type": "welcome_points", "value": 20000, "qualification": "spend £1,000 in first 30 days", "personalised": true },
+        { "type": "membership_fee", "value": "first month free" },
+        { "type": "rent_mortgage_points", "value": "5 points per £1 up to 10,000 points monthly until 31 December 2026", "new_customers_only": true }
+      ],
+      "foreign_transaction_fee_percent": 0,
+      "eligibility_audience": "UK residents aged 18+ subject to credit approval.",
+      "publishability": "rankable",
+      "ambiguities": [
+        "Yonder has both older 'Full' pages/agreements quoting £15 monthly or £160 annually and current 'Premium' pages quoting £17.99 monthly or £190 annually. This record follows the current Premium product page.",
+        "Experience redemption can produce higher value (marketed as up to 2.5% return), but it varies by reward. The rankable floor uses the official fixed cash-equivalent credit only."
+      ]
+    },
+    {
+      "id": "post-office-credit-card",
+      "issuer": "Capital One (Europe) plc",
+      "name": "Post Office Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.postoffice.co.uk/credit-card",
+      "terms_url": "https://www.postoffice.co.uk/credit-card",
+      "network": "Mastercard",
+      "annual_fee": { "amount_gbp": 0 },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [
+        { "type": "purchase_apr", "value": "0% for up to 6 months", "personalised": true }
+      ],
+      "foreign_transaction_fee_percent": 2.75,
+      "eligibility_audience": "UK residents aged 18+; Capital One is the exclusive lender and issuer and Post Office acts as credit broker.",
+      "publishability": "rankable",
+      "ambiguities": ["A Post Office guide mentions up to 12 months, while the live product page retrieved for this review says up to 6 months. Store the personalised issued offer rather than assuming either maximum. No cash-advance fee applies when buying Post Office Travel Money, but that is not a general purchase reward."]
+    },
+    {
+      "id": "post-office-travel-credit-card",
+      "issuer": "Capital One (Europe) plc",
+      "name": "Post Office Travel Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.postoffice.co.uk/credit-card/travel-credit-card",
+      "terms_url": "https://www.postoffice.co.uk/credit-card/travel-credit-card",
+      "network": "Mastercard",
+      "annual_fee": { "amount_gbp": 0 },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [
+        { "type": "purchase_apr", "value": "0% for 6 months" }
+      ],
+      "foreign_transaction_fee_percent": 0,
+      "eligibility_audience": "UK residents aged 18+; Capital One is the exclusive lender and issuer and Post Office acts as credit broker.",
+      "publishability": "rankable",
+      "ambiguities": ["Zero foreign transaction fee covers foreign-currency purchases, including online/phone purchases from the UK. A 3% cash advance fee still applies to cash withdrawals or foreign currency bought elsewhere; Post Office Travel Money is the stated exception."]
+    },
+    {
+      "id": "jaja-vanta",
+      "issuer": "Jaja Finance Ltd",
+      "name": "Jaja Vanta Credit Card",
+      "status": "open_to_applications",
+      "product_url": "https://jaja.co.uk/vanta-purchase-credit-card/",
+      "terms_url": "https://jaja.co.uk/app/uploads/2026/04/jaja-vanta-summary-box-april-2026.pdf",
+      "network": "Visa",
+      "annual_fee": { "amount_gbp": 0 },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": 2.99,
+      "eligibility_audience": "UK residents aged 18+ subject to status; positioned for credit building and app-based account management, with a published £250 minimum and £500 maximum credit limit in the April 2026 summary box.",
+      "publishability": "rankable",
+      "ambiguities": ["No ongoing purchase reward is advertised on the Vanta product page. The summary box states the non-sterling purchase fee and no annual fee."]
+    },
+    {
+      "id": "bip-digital-credit",
+      "issuer": "NewDay Ltd",
+      "name": "Bip",
+      "status": "open_to_applications",
+      "product_url": "https://www.bip.credit/",
+      "terms_url": "https://www.bip.credit/api-acq/product/legal/1000472AA000DSE01000.pdf",
+      "network": "Mastercard",
+      "annual_fee": { "amount_gbp": 0 },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": 0,
+      "eligibility_audience": "UK residents aged 18+ subject to status; digital-only credit with starting limits from £250 to £1,200 and a compatible phone for Apple Pay or Google Pay.",
+      "publishability": "rankable",
+      "ambiguities": ["Bip has no plastic card. The official proposition states no annual, late-payment, over-limit, or overseas-use fees and one interest rate; it does not advertise an ongoing purchase reward."]
+    },
+    {
+      "id": "amazon-barclaycard",
+      "issuer": "Barclays Bank UK PLC",
+      "name": "The Amazon Barclaycard",
+      "status": "open_to_applications",
+      "product_url": "https://www.barclays.co.uk/credit-cards/reward-cards/the-amazon-barclaycard/",
+      "terms_url": "https://m.media-amazon.com/images/G/02/credit/img17/cbcc/ukcbcc/Detail_Page/Amazon_Barclaycard_Reward_Rules.pdf",
+      "network": null,
+      "annual_fee": { "amount_gbp": 0, "billing": "£0 monthly" },
+      "ongoing_purchase_rewards": [
+        { "type": "cashback_to_amazon_rewards", "rate_percent": 1, "scope": "eligible Amazon-supported channels" },
+        { "type": "cashback_to_amazon_rewards", "rate_percent": 0.25, "scope": "eligible non-Amazon purchases after first 12 months" },
+        { "type": "cashback_to_amazon_rewards", "rate_percent": 2, "scope": "Prime members at specifically designated Amazon key shopping events", "deterministic": false }
+      ],
+      "fixed_redemption_value": { "value": "£5 Amazon Gift Card per £5 rewards", "redemption_increment_gbp": 5 },
+      "introductory_promotions": [
+        { "type": "non_amazon_rewards", "value": "0.5% during first 12 months, then 0.25%" },
+        { "type": "purchase_apr", "value": "0% for first 6 months" },
+        { "type": "welcome_gift", "value": "£50 Amazon Gift Card", "qualification": "apply by 13 October 2026 and be approved; published standard after that is £20" }
+      ],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "UK residents aged 18+ who have lived permanently at a UK address for at least two years and meet Barclays affordability/credit criteria; app-first account linked to Amazon.co.uk.",
+      "publishability": "rankable",
+      "ambiguities": ["This is the current Barclays-issued product, not the terminated NewDay Amazon programme. The reviewed public page does not state a product-specific foreign-transaction fee or unambiguous payment network, so neither is inferred."]
+    },
+    {
+      "id": "amazon-newday-legacy",
+      "issuer": "NewDay Ltd",
+      "name": "Amazon Mastercard (NewDay legacy programme)",
+      "status": "closed_to_new_business",
+      "product_url": "https://www.newday.co.uk/media/qxzd20yh/newday-2022-annual-report.pdf",
+      "terms_url": "https://www.newday.co.uk/media/qxzd20yh/newday-2022-annual-report.pdf",
+      "network": "Mastercard",
+      "annual_fee": null,
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "None for new applicants.",
+      "publishability": "exclude",
+      "ambiguities": ["NewDay's official annual report says it ceased originating new Amazon customers in June 2022 and the partnership concluded in January 2023. Certain retained accounts were migrated to Pulse. Do not publish this as a current product."]
+    },
+    {
+      "id": "pulse-mastercard",
+      "issuer": "NewDay Ltd",
+      "name": "Pulse Mastercard",
+      "status": "invitation_only_existing_customer_migration",
+      "product_url": "https://www.pulsecard.co.uk/",
+      "terms_url": "https://www.pulsecard.co.uk/moving-to-pulse/",
+      "network": "Mastercard",
+      "annual_fee": { "amount_gbp": 0 },
+      "ongoing_purchase_rewards": [
+        { "type": "cashback", "rate_percent": 0.25, "scope": "qualifying purchases", "annual_cap_gbp": 150 }
+      ],
+      "fixed_redemption_value": { "value": "cashback automatically credited to Pulse account" },
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "Invitation-only replacement card for selected existing NewDay cardholders; there is no general application path or new credit check for the migration.",
+      "publishability": "rankable",
+      "ambiguities": ["Interest rates and charges are inherited from the card being replaced, so FX treatment is account-specific. Recommendation logic needs annual cashback-cap usage to avoid overstating value near £150."]
+    },
+    {
+      "id": "argos-pay",
+      "issuer": "NewDay Ltd",
+      "name": "Argos Pay",
+      "status": "open_to_applications",
+      "product_url": "https://help.argos.co.uk/help/argos-pay",
+      "terms_url": "https://help.argos.co.uk/help/argos-pay",
+      "network": null,
+      "annual_fee": null,
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [
+        { "type": "closed_loop_credit", "value": "Buy Now Pay Later offers from 3 to 12 months at 0%, plus item- and eligibility-dependent instalment plans" }
+      ],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "UK residents aged 18+ who have lived in the UK for at least one year, have UK mobile/email details, and do not already have Argos Card or Argos Pay; usable at Argos or Habitat.",
+      "publishability": "exclude",
+      "ambiguities": ["Argos Pay is reusable closed-loop retail credit, not a general-purpose network credit card. Existing Argos Cards migrated to Argos Pay in April 2026. It should not appear in a general checkout-card recommender."]
+    },
+    {
+      "id": "currensea-direct-debit-travel-card",
+      "issuer": "Currensea Limited",
+      "name": "Currensea Direct Debit Travel Card",
+      "status": "open_to_applications",
+      "product_url": "https://www.currensea.com/pricing/plans",
+      "terms_url": "https://help.currensea.com/hc/en-us/articles/360004197700-What-is-Currensea",
+      "network": "Mastercard Debit",
+      "annual_fee": { "amount_gbp": 0, "plan": "Essential", "delivery_fee_gbp": 4.95 },
+      "ongoing_purchase_rewards": [],
+      "fixed_redemption_value": null,
+      "introductory_promotions": [],
+      "foreign_transaction_fee_percent": null,
+      "eligibility_audience": "Customers linking an eligible UK current account through Open Banking; paid Pro and Elite debit plans also exist.",
+      "publishability": "exclude",
+      "ambiguities": ["Currensea's official help centre explicitly says it is not a credit card. It is a Mastercard debit card funded by Direct Debit and is outside this catalogue's scope."]
+    }
+  ]
+}

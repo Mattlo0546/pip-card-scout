@@ -1,0 +1,1354 @@
+{
+  "schemaVersion": 1,
+  "market": "GB",
+  "currency": "GBP",
+  "release": {
+    "version": "uk-2026.09.28",
+    "reviewedAt": "2026-09-28",
+    "sourcePolicy": "Official issuer, card-programme, or merchant programme sources only. Introductory offers are excluded from the base rate. A product is catalog-only when its ongoing value needs account-age, cumulative-spend, cap-usage, activation, or variable redemption state that Pip does not yet track."
+  },
+  "products": [
+    {
+      "slug": "amex-uk-rewards-credit-card",
+      "name": "American Express® Rewards Credit Card",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 0,
+      "comparisonStatus": "verified",
+      "baseReward": {
+        "type": "points",
+        "rate": 1,
+        "pointValuePence": 0.45,
+        "redemptionLabel": "Membership Rewards statement-credit floor"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/rewards-credit-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/rewards-credit-card/American_Express_Rewards_301_5VT_Card_Summary_Box.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/rewards-credit-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/rewards-credit-card/American_Express_Rewards_301_5VT_Card_Summary_Box.pdf",
+        "https://www.americanexpress.com/en-gb/benefits/rewards/membership-rewards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The base value uses American Express's official 1,000-points-to-£4.50 statement-credit option (0.45p per point). Other redemption methods can be worth more or less. Membership Rewards value varies by redemption; £0.005 is valid only for the cited official examples. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amex-uk-cashback",
+      "name": "Amex® Cashback Credit Card",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 2500,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/platinum-cashback-credit-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-cashback-credit-card/Plat-CB-SB.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/platinum-cashback-credit-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-cashback-credit-card/Plat-CB-SB.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Ongoing rewards are stated directly as cashback percentages and the annual fee is explicit. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amex-uk-cashback-everyday",
+      "name": "Amex® Cashback Everyday Credit Card",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/platinum-cashback-everyday-credit-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-cashback-everyday-credit-card/Plat-CB-everyday-SB.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/platinum-cashback-everyday-credit-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-cashback-everyday-credit-card/Plat-CB-everyday-SB.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Ongoing rewards are stated directly as cashback percentages. At least £3,000 of eligible spend in the cardmembership year is required to receive cashback. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amex-uk-british-airways",
+      "name": "British Airways American Express® Credit Card",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/ba-credit-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/ba-credit-card/BACreditSummaryBox.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/ba-credit-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/ba-credit-card/BACreditSummaryBox.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Avios and the Companion Voucher do not have a single official fixed monetary value. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amex-uk-british-airways-premium-plus",
+      "name": "British Airways American Express® Premium Plus Card",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 30000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/ba-premium-plus-credit-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/ba-premium-plus-credit-card/BAPremiumPlusSummaryBox.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/ba-premium-plus-credit-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/ba-premium-plus-credit-card/BAPremiumPlusSummaryBox.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Avios and the Companion Voucher do not have a single official fixed monetary value. The issuer announces an earn-rate change effective 7 October 2026. The 3-Avios British Airways/British Airways Holidays rate is shown only through 6 October on the official page; the post-change category rate should be rechecked on the effective date. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amex-uk-marriott-bonvoy",
+      "name": "Marriott Bonvoy® American Express® Credit Card",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 9500,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/marriott-bonvoy-credit-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/marriott-credit-card/Marriott-SummaryBox.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/marriott-bonvoy-credit-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/marriott-credit-card/Marriott-SummaryBox.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Marriott Bonvoy points do not have a single official fixed monetary value. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amex-uk-nectar",
+      "name": "Nectar Credit Card",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 3000,
+      "comparisonStatus": "verified",
+      "baseReward": {
+        "type": "points",
+        "rate": 2,
+        "pointValuePence": 0.5,
+        "redemptionLabel": "Nectar points at the issuer-stated minimum redemption value"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/nectar-credit-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/nectar-credit-card/NectarCard-SB.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/nectar-credit-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/nectar-credit-card/NectarCard-SB.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The issuer states an official minimum monetary value of £0.005 per Nectar point for named partner redemptions. The advertised partner earn of at least 3 points per £1 includes points earned from presenting the separate Nectar loyalty card; it is not wholly incremental credit-card reward. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amex-uk-preferred-rewards-gold",
+      "name": "Preferred Rewards Gold Credit Card",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 19500,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/gold-credit-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/gold-credit-card/Preferred_Rewards_Gold_Credit_Card_Summary_Box.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/gold-credit-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/gold-credit-card/Preferred_Rewards_Gold_Credit_Card_Summary_Box.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Membership Rewards points do not have one fixed official cash value across redemption options. The page markets gift-card value examples using 'up to'; these are not a universal fixed point value. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amex-uk-platinum-card",
+      "name": "The Platinum Card®",
+      "issuer": "American Express UK",
+      "network": "American Express",
+      "annualFeePence": 65000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.americanexpress.com/en-gb/credit-cards/platinum-card/",
+      "termsUrl": "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-card/Platinum_Card_Summary_Box.pdf",
+      "sourceUrls": [
+        "https://www.americanexpress.com/en-gb/credit-cards/platinum-card/",
+        "https://icm.aexp-static.com/Internet/internationalcardshop/en_gb/pdf/platinum-card/Platinum_Card_Summary_Box.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Membership Rewards points do not have one fixed official cash value across redemption options. The product page describes Membership Rewards redemption options but does not state a single fixed value applicable to every point. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "bank-of-scotland-advance-credit-card",
+      "name": "Bank of Scotland Advance Credit Card",
+      "issuer": "Bank of Scotland",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.bankofscotland.co.uk/creditcards/credit-builder.html",
+      "termsUrl": "https://www.bankofscotland.co.uk/assets/pdf/credit-cards/summary-box/bank-of-scotland-credit-card.pdf",
+      "sourceUrls": [
+        "https://www.bankofscotland.co.uk/creditcards/credit-builder.html",
+        "https://www.bankofscotland.co.uk/assets/pdf/credit-cards/summary-box/bank-of-scotland-credit-card.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Active product with no deterministic ongoing purchase reward. The generic Bank of Scotland summary box may not be specific to the Advance variant; verify card-specific pricing before production import. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.95%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "barclaycard-avios",
+      "name": "Barclaycard Avios",
+      "issuer": "Barclaycard",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios/",
+      "termsUrl": "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios/",
+      "sourceUrls": [
+        "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios/",
+        "https://www.barclays.co.uk/credit-cards/avios-cards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The earn rate is exact, but the issuer does not provide a fixed pence-per-Avios value suitable for cross-card ranking. Foreign-use fee not explicit in retrieved product evidence. Voucher value and Avios value depend on redemption. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "barclaycard-avios-plus",
+      "name": "Barclaycard Avios Plus card",
+      "issuer": "Barclaycard",
+      "network": "Mastercard",
+      "annualFeePence": 24000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios-plus/",
+      "termsUrl": "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios-plus/",
+      "sourceUrls": [
+        "https://www.barclays.co.uk/credit-cards/avios-cards/barclaycard-avios-plus/",
+        "https://www.barclays.co.uk/credit-cards/avios-cards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The earn rate is exact, but the issuer does not provide a fixed pence-per-Avios value suitable for cross-card ranking. Foreign-use fee not explicit in retrieved product evidence. Voucher value and Avios value depend on redemption. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "barclaycard-rewards",
+      "name": "Barclaycard Rewards card",
+      "issuer": "Barclaycard",
+      "network": "Visa",
+      "annualFeePence": 0,
+      "comparisonStatus": "verified",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0.25,
+        "pointValuePence": null,
+        "redemptionLabel": "Cashback credited under the issuer reward rules"
+      },
+      "sourceUrl": "https://www.barclays.co.uk/credit-cards/reward-cards/barclays-rewards/",
+      "termsUrl": "https://www.barclays.co.uk/credit-cards/reward-cards/barclays-rewards/",
+      "sourceUrls": [
+        "https://www.barclays.co.uk/credit-cards/reward-cards/barclays-rewards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Fixed cash value and a single published ongoing rate. No explicit annual-fee line was exposed on the product page; £0 is inferred from the representative APR having no stated account fee and should be checked against the linked summary before production import. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "amazon-barclaycard",
+      "name": "The Amazon Barclaycard",
+      "issuer": "Barclaycard",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.barclays.co.uk/credit-cards/reward-cards/the-amazon-barclaycard/",
+      "termsUrl": "https://www.barclays.co.uk/credit-cards/reward-cards/the-amazon-barclaycard/",
+      "sourceUrls": [
+        "https://www.barclays.co.uk/credit-cards/reward-cards/the-amazon-barclaycard/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The steady-state Amazon and other-purchase reward rates have direct cash-equivalent gift-card values. Prime-event 2% rewards are event-specific and must be ingested as dated offers, not an ongoing rule. Foreign-use fee was not explicit in the retrieved product evidence. Official page does not plainly name the scheme network in the retrieved text; network should be confirmed from the summary PDF before import. 3 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "capital-one-balance-transfer",
+      "name": "Capital One Balance Transfer Card",
+      "issuer": "Capital One (Europe) plc",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.capitalone.co.uk/creditcards/credit-cards",
+      "termsUrl": "https://www.capitalone.co.uk/creditcards/applying-for-a-credit-card",
+      "sourceUrls": [
+        "https://www.capitalone.co.uk/creditcards/credit-cards",
+        "https://www.capitalone.co.uk/creditcards/applying-for-a-credit-card"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The promotional duration and transfer fee are personalised ('up to'), so they must not be represented as guaranteed. No ongoing purchase reward is advertised; the non-sterling transaction fee is agreement-specific. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "capital-one-classic",
+      "name": "Capital One Classic Card",
+      "issuer": "Capital One (Europe) plc",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.capitalone.co.uk/creditcards/credit-cards",
+      "termsUrl": "https://www.capitalone.co.uk/creditcards/credit-builder-credit-cards",
+      "sourceUrls": [
+        "https://www.capitalone.co.uk/creditcards/credit-cards",
+        "https://www.capitalone.co.uk/creditcards/credit-builder-credit-cards"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Capital One says its UK cards have no annual fee, but the non-sterling transaction fee varies by card agreement. No ongoing purchase reward is advertised on the official product page; model ordinary domestic purchase value as zero rather than inventing a benefit.",
+      "rules": []
+    },
+    {
+      "slug": "post-office-credit-card",
+      "name": "Post Office Credit Card",
+      "issuer": "Capital One (Europe) plc",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.postoffice.co.uk/credit-card",
+      "termsUrl": "https://www.postoffice.co.uk/credit-card",
+      "sourceUrls": [
+        "https://www.postoffice.co.uk/credit-card"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "A Post Office guide mentions up to 12 months, while the live product page retrieved for this review says up to 6 months. Store the personalised issued offer rather than assuming either maximum. No cash-advance fee applies when buying Post Office Travel Money, but that is not a general purchase reward. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.75%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "post-office-travel-credit-card",
+      "name": "Post Office Travel Credit Card",
+      "issuer": "Capital One (Europe) plc",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.postoffice.co.uk/credit-card/travel-credit-card",
+      "termsUrl": "https://www.postoffice.co.uk/credit-card/travel-credit-card",
+      "sourceUrls": [
+        "https://www.postoffice.co.uk/credit-card/travel-credit-card"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Zero foreign transaction fee covers foreign-currency purchases, including online/phone purchases from the UK. A 3% cash advance fee still applies to cash withdrawals or foreign currency bought elsewhere; Post Office Travel Money is the stated exception. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "halifax-cashback-credit-card",
+      "name": "Halifax Cashback Credit Card",
+      "issuer": "Halifax",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "verified",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0.25,
+        "pointValuePence": null,
+        "redemptionLabel": "Cashback credited to the card account"
+      },
+      "sourceUrl": "https://www.halifax.co.uk/creditcards/cashback.html",
+      "termsUrl": "https://www.halifax.co.uk/creditcards/help-guidance/terms-and-conditions.html",
+      "sourceUrls": [
+        "https://www.halifax.co.uk/creditcards/cashback.html",
+        "https://www.halifax.co.uk/creditcards/help-guidance/terms-and-conditions.html",
+        "https://www.halifax.co.uk/creditcards/help-guidance/using-a-credit-card-abroad.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Fixed cash value and a single published ongoing rate. Card network is not stated on the product page. Application availability is constrained by the brand migration and should be monitored. Published foreign-purchase fee: 2.95%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "halifax-world-elite-mastercard",
+      "name": "Halifax World Elite Mastercard®",
+      "issuer": "Halifax",
+      "network": "Mastercard",
+      "annualFeePence": 18000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.halifax.co.uk/creditcards/mastercard-world-elite.html",
+      "termsUrl": "https://www.halifax.co.uk/creditcards/help-guidance/terms-and-conditions.html",
+      "sourceUrls": [
+        "https://www.halifax.co.uk/creditcards/mastercard-world-elite.html",
+        "https://www.halifax.co.uk/creditcards/help-guidance/terms-and-conditions.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Accurate ranking requires the cardholder's current anniversary-year spend, which the extension does not presently know. Application availability is constrained by the brand migration and should be monitored. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "hsbc-premier-credit-card",
+      "name": "Premier Credit Card",
+      "issuer": "HSBC UK",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.hsbc.co.uk/credit-cards/products/premier/",
+      "termsUrl": "https://www.hsbc.co.uk/credit-cards/products/premier/",
+      "sourceUrls": [
+        "https://www.hsbc.co.uk/credit-cards/products/premier/",
+        "https://www.hsbc.co.uk/credit-cards/rewards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Issuer publishes earn rates but not one fixed pence-per-point value across vouchers, airline miles and hotel transfers. Reward value depends on redemption partner and transfer ratio. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "hsbc-premier-world-elite-mastercard",
+      "name": "Premier World Elite Mastercard",
+      "issuer": "HSBC UK",
+      "network": "Mastercard",
+      "annualFeePence": 29000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.hsbc.co.uk/credit-cards/products/premier-world-elite/",
+      "termsUrl": "https://www.hsbc.co.uk/credit-cards/products/premier-world-elite/",
+      "sourceUrls": [
+        "https://www.hsbc.co.uk/credit-cards/products/premier-world-elite/",
+        "https://www.hsbc.co.uk/credit-cards/rewards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Issuer publishes earn rates but not one fixed pence-per-point value across vouchers, airline miles and hotel transfers. Reward value depends on redemption partner and transfer ratio. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "hsbc-rewards-credit-card",
+      "name": "Rewards Credit Card",
+      "issuer": "HSBC UK",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.hsbc.co.uk/credit-cards/products/rewards/",
+      "termsUrl": "https://www.hsbc.co.uk/credit-cards/compare/rewards-credit-card/",
+      "sourceUrls": [
+        "https://www.hsbc.co.uk/credit-cards/products/rewards/",
+        "https://www.hsbc.co.uk/credit-cards/compare/rewards-credit-card/",
+        "https://www.hsbc.co.uk/credit-cards/rewards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The baseline earn rate and issuer-stated cash-equivalent point value can be represented; dynamic selected-retailer rates must be excluded from baseline ranking. The welcome-bonus value implies 1p per point, but a production import should verify that this is also the redemption value for all Mastercard Pay with Rewards transactions. Exact non-sterling fee was not shown in the retrieved product evidence. 3 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "ms-bank-rewards",
+      "name": "M&S Rewards Credit Card",
+      "issuer": "HSBC UK Bank plc (trading as M&S Bank)",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.marksandspencer.com/c/money/credit-card/rewards",
+      "termsUrl": "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf",
+      "sourceUrls": [
+        "https://www.marksandspencer.com/c/money/credit-card/rewards",
+        "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "M&S gives a fixed voucher conversion and explicit earn rates. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "ms-bank-purchase-plus",
+      "name": "Purchase Plus Credit Card",
+      "issuer": "HSBC UK Bank plc (trading as M&S Bank)",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "verified",
+      "baseReward": {
+        "type": "points",
+        "rate": 0.2,
+        "pointValuePence": 1,
+        "redemptionLabel": "M&S vouchers"
+      },
+      "sourceUrl": "https://www.marksandspencer.com/c/money/credit-card/purchase-plus",
+      "termsUrl": "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf",
+      "sourceUrls": [
+        "https://www.marksandspencer.com/c/money/credit-card/purchase-plus",
+        "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf",
+        "https://bank.marksandspencer.com/credit-card/rewards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "M&S gives a fixed voucher conversion and explicit earn rate. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "ms-bank-transfer-plus",
+      "name": "Transfer Plus Credit Card",
+      "issuer": "HSBC UK Bank plc (trading as M&S Bank)",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "verified",
+      "baseReward": {
+        "type": "points",
+        "rate": 0.2,
+        "pointValuePence": 1,
+        "redemptionLabel": "M&S vouchers"
+      },
+      "sourceUrl": "https://www.marksandspencer.com/c/money/credit-card/transfer-plus",
+      "termsUrl": "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf",
+      "sourceUrls": [
+        "https://www.marksandspencer.com/c/money/credit-card/transfer-plus",
+        "https://www7.marksandspencer.com/content/dam/wpb/msrf/pws/documents/CCSummaryBox.pdf",
+        "https://bank.marksandspencer.com/credit-card/rewards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "M&S gives a fixed voucher conversion and explicit earn rate. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "jaja-vanta",
+      "name": "Jaja Vanta Credit Card",
+      "issuer": "Jaja Finance Ltd",
+      "network": "Visa",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://jaja.co.uk/vanta-purchase-credit-card/",
+      "termsUrl": "https://jaja.co.uk/app/uploads/2026/04/jaja-vanta-summary-box-april-2026.pdf",
+      "sourceUrls": [
+        "https://jaja.co.uk/vanta-purchase-credit-card/",
+        "https://jaja.co.uk/app/uploads/2026/04/jaja-vanta-summary-box-april-2026.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "No ongoing purchase reward is advertised on the Vanta product page. The summary box states the non-sterling purchase fee and no annual fee. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "zable-credit-card",
+      "name": "Zable Credit Card",
+      "issuer": "Lendable Limited (credit provider/programme manager); Transact Payments Limited (payment-card issuer)",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://zable.co.uk/cards",
+      "termsUrl": "https://zable.co.uk/cards",
+      "sourceUrls": [
+        "https://zable.co.uk/cards"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The range page mentions a Zable+ card with higher limits/lower APR, but does not expose sufficiently distinct public reward or fee rules to model it as a separate checkout product. No ongoing purchase reward is advertised for the Zable card itself. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "lloyds-ultra-credit-card",
+      "name": "Lloyds Ultra Credit Card",
+      "issuer": "Lloyds Bank",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.lloydsbank.com/credit-cards/ultra.html",
+      "termsUrl": "https://www.lloydsbank.com/help-guidance/legal-information.html",
+      "sourceUrls": [
+        "https://www.lloydsbank.com/credit-cards/ultra.html",
+        "https://www.lloydsbank.com/help-guidance/legal-information.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Fixed cash value, explicit post-introductory rate and no account fee. Network is not named in the retrieved product-page text and should be confirmed from the card summary before import. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "lloyds-world-elite-mastercard",
+      "name": "Lloyds World Elite Mastercard®",
+      "issuer": "Lloyds Bank",
+      "network": "Mastercard",
+      "annualFeePence": 18000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.lloydsbank.com/credit-cards/mastercard-world-elite.html",
+      "termsUrl": "https://www.lloydsbank.com/help-guidance/legal-information.html",
+      "sourceUrls": [
+        "https://www.lloydsbank.com/credit-cards/mastercard-world-elite.html",
+        "https://www.lloydsbank.com/help-guidance/legal-information.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Accurate ranking requires the cardholder's current anniversary-year spend, which the extension does not presently know. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "mbna-dual-zero-transfer-purchase-credit-card",
+      "name": "MBNA Dual 0% Transfer and Purchase Credit Card",
+      "issuer": "MBNA",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.mbna.co.uk/credit-cards/purchase-credit-cards.html",
+      "termsUrl": "https://www.mbna.co.uk/assets/pdfs/summary-box/balance-transfer-and-purchase.pdf",
+      "sourceUrls": [
+        "https://www.mbna.co.uk/credit-cards/purchase-credit-cards.html",
+        "https://www.mbna.co.uk/assets/pdfs/summary-box/balance-transfer-and-purchase.pdf",
+        "https://www.mbna.co.uk/online-services/profile-and-settings/smart-rewards.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "No deterministic ongoing purchase reward; Smart Rewards are personalised, activation-based merchant offers with variable rates. MBNA does not show a universal public card list and may personalise the product offered. Card network and foreign-use fee were not explicit in retrieved evidence. Smart Rewards cannot be ranked without the user's live activated offers. 3 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "nationwide-member-credit-card",
+      "name": "Member Credit Card",
+      "issuer": "Nationwide Building Society",
+      "network": "Visa",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.nationwide.co.uk/credit-cards",
+      "termsUrl": "https://www.nationwide.co.uk/credit-cards/help/terms",
+      "sourceUrls": [
+        "https://www.nationwide.co.uk/credit-cards",
+        "https://www.nationwide.co.uk/credit-cards/help/terms",
+        "https://www.nationwide.co.uk/help/travel/charges-using-your-card-abroad"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Active product with no deterministic ongoing purchase reward; its benefit is commission-free foreign purchases. Applicants choose between two introductory variants; this does not affect ongoing rewards ranking. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "natwest-reward-black-credit-card",
+      "name": "Reward Black credit card",
+      "issuer": "NatWest",
+      "network": "Mastercard",
+      "annualFeePence": 8400,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.natwest.com/credit-cards/reward-black-credit-card.html",
+      "termsUrl": "https://www.natwest.com/credit-cards/reward-black-credit-card.html",
+      "sourceUrls": [
+        "https://www.natwest.com/credit-cards/reward-black-credit-card.html",
+        "https://www.natwest.com/myrewards/terms-and-exclusions.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Deterministic cash-equivalent rates by published category; account-specific fee waiver is metadata rather than a purchase reward. Whether the £84 fee is refunded depends on a separate current-account relationship. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "natwest-travel-reward-credit-card",
+      "name": "Travel Reward credit card",
+      "issuer": "NatWest",
+      "network": "Visa",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.natwest.com/credit-cards/travel-reward-credit-card.html",
+      "termsUrl": "https://www.natwest.com/credit-cards/travel-reward-credit-card.html",
+      "sourceUrls": [
+        "https://www.natwest.com/credit-cards/travel-reward-credit-card.html",
+        "https://www.natwest.com/myrewards/terms-and-exclusions.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Deterministic cash-equivalent rates with issuer-published travel MCC definitions. Individual merchants can be assigned unexpected MCCs, especially outside the UK. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "aqua-classic",
+      "name": "Aqua Classic",
+      "issuer": "NewDay Ltd",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.aquacard.co.uk/credit-cards/aqua-classic",
+      "termsUrl": "https://www.aquacard.co.uk/credit-cards/aqua-classic",
+      "sourceUrls": [
+        "https://www.aquacard.co.uk/credit-cards/aqua-classic"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "A separate Aqua balance-transfer landing page resolves back to Aqua Classic and shows personalised terms, so it is not treated as a distinct durable product identity. No ongoing purchase reward is advertised on the current Aqua Classic page.",
+      "rules": []
+    },
+    {
+      "slug": "bip-digital-credit",
+      "name": "Bip",
+      "issuer": "NewDay Ltd",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.bip.credit/",
+      "termsUrl": "https://www.bip.credit/api-acq/product/legal/1000472AA000DSE01000.pdf",
+      "sourceUrls": [
+        "https://www.bip.credit/",
+        "https://www.bip.credit/api-acq/product/legal/1000472AA000DSE01000.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Bip has no plastic card. The official proposition states no annual, late-payment, over-limit, or overseas-use fees and one interest rate; it does not advertise an ongoing purchase reward. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "pulse-mastercard",
+      "name": "Pulse Mastercard",
+      "issuer": "NewDay Ltd",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.pulsecard.co.uk/",
+      "termsUrl": "https://www.pulsecard.co.uk/moving-to-pulse/",
+      "sourceUrls": [
+        "https://www.pulsecard.co.uk/",
+        "https://www.pulsecard.co.uk/moving-to-pulse/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Interest rates and charges are inherited from the card being replaced, so FX treatment is account-specific. Recommendation logic needs annual cashback-cap usage to avoid overstating value near £150.",
+      "rules": []
+    },
+    {
+      "slug": "john-lewis-partnership-credit-card",
+      "name": "John Lewis Partnership Credit Card",
+      "issuer": "NewDay Ltd for John Lewis Money",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.johnlewismoney.com/partnership-credit-card",
+      "termsUrl": "https://apply.newdaycards.com/api/summary-box/johnlewis",
+      "sourceUrls": [
+        "https://www.johnlewismoney.com/partnership-credit-card",
+        "https://apply.newdaycards.com/api/summary-box/johnlewis"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The issuer provides explicit earn rates and a fixed voucher conversion. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.95%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "rbs-reward-black-credit-card",
+      "name": "Reward Black credit card",
+      "issuer": "Royal Bank of Scotland",
+      "network": "Mastercard",
+      "annualFeePence": 8400,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.rbs.co.uk/credit-cards/reward-black-credit-card.html",
+      "termsUrl": "https://www.rbs.co.uk/credit-cards/reward-black-credit-card.html",
+      "sourceUrls": [
+        "https://www.rbs.co.uk/credit-cards/reward-black-credit-card.html",
+        "https://www.rbs.co.uk/myrewards/terms-and-exclusions.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Deterministic cash-equivalent rates by published category. Whether the £84 fee is refunded depends on a separate current-account relationship. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "rbs-reward-credit-card",
+      "name": "Reward credit card",
+      "issuer": "Royal Bank of Scotland",
+      "network": "Mastercard",
+      "annualFeePence": 2400,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.rbs.co.uk/credit-cards/reward-credit-card.html",
+      "termsUrl": "https://www.rbs.co.uk/credit-cards/reward-credit-card/summary-box.html",
+      "sourceUrls": [
+        "https://www.rbs.co.uk/credit-cards/reward-credit-card.html",
+        "https://www.rbs.co.uk/credit-cards/reward-credit-card/summary-box.html",
+        "https://www.rbs.co.uk/myrewards/terms-and-exclusions.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Deterministic cash-equivalent rates by published category. The product page describes a foreign exchange fee but does not give the exact percentage in the retrieved evidence. Whether the £24 fee is refunded depends on a separate current-account relationship.",
+      "rules": []
+    },
+    {
+      "slug": "santander-all-in-one-credit-card",
+      "name": "All in One Credit Card",
+      "issuer": "Santander UK",
+      "network": "Mastercard",
+      "annualFeePence": 3600,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.santander.co.uk/personal/credit-cards/all-in-one-credit-card",
+      "termsUrl": "https://www.santander.co.uk/assets/s3fs-public/documents/all-in-one-credit-card-key-facts-document.pdf",
+      "sourceUrls": [
+        "https://www.santander.co.uk/personal/credit-cards/all-in-one-credit-card",
+        "https://www.santander.co.uk/assets/s3fs-public/documents/all-in-one-credit-card-key-facts-document.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Fixed cash value with a precise monthly cap and account fee. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "santander-rewards-credit-card",
+      "name": "Rewards Credit Card",
+      "issuer": "Santander UK",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.santander.co.uk/personal/credit-cards/santander-rewards-credit-card",
+      "termsUrl": "https://www.santander.co.uk/assets/s3fs-public/AD_documents/Santander_Rewards_Credit_Card_Key_Facts_Document_ACSMC1132_500727010.pdf",
+      "sourceUrls": [
+        "https://www.santander.co.uk/personal/credit-cards/santander-rewards-credit-card",
+        "https://www.santander.co.uk/assets/s3fs-public/AD_documents/Santander_Rewards_Credit_Card_Key_Facts_Document_ACSMC1132_500727010.pdf",
+        "https://www.santander.co.uk/personal/credit-cards"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Fixed ongoing cash value; first-year category bonus is separately dated and requires account-open date. Year-one MCC classification can differ from the apparent merchant category, especially overseas. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "santander-world-elite-mastercard",
+      "name": "Santander World Elite™ Mastercard®",
+      "issuer": "Santander UK",
+      "network": "Mastercard",
+      "annualFeePence": 18000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.santander.co.uk/personal/credit-cards/santander-world-elite-mastercard",
+      "termsUrl": "https://www.santander.co.uk/personal/credit-cards/santander-world-elite-mastercard",
+      "sourceUrls": [
+        "https://www.santander.co.uk/personal/credit-cards/santander-world-elite-mastercard",
+        "https://www.santander.co.uk/landing/World-Elite-Mastercard-Offer"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Fixed cash value with a precise monthly cap and account fee. The separate £90 acquisition offer has no firm end date and requires live availability checking. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "tesco-bank-all-round",
+      "name": "All Round Credit Card",
+      "issuer": "Tesco Bank",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.tescobank.com/credit-cards/all-round-credit-cards/",
+      "termsUrl": "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+      "sourceUrls": [
+        "https://www.tescobank.com/credit-cards/all-round-credit-cards/",
+        "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+        "https://www.tescobank.com/credit-cards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Clubcard vouchers have an official fixed base conversion; the model uses only credit-card-attributable points where separable. The network was not explicitly stated in the official pages reviewed. At Tesco, headline point totals can combine ordinary Clubcard earnings with incremental credit-card earnings. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.75%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "tesco-bank-balance-transfer-and-purchases",
+      "name": "Balance Transfer and Purchases Credit Card",
+      "issuer": "Tesco Bank",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.tescobank.com/credit-cards/balance-transfer-and-purchases-credit-card/",
+      "termsUrl": "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+      "sourceUrls": [
+        "https://www.tescobank.com/credit-cards/balance-transfer-and-purchases-credit-card/",
+        "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+        "https://www.tescobank.com/credit-cards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Clubcard vouchers have an official fixed base conversion; the model uses only credit-card-attributable points where separable. The network was not explicitly stated in the official pages reviewed. At Tesco, headline point totals can combine ordinary Clubcard earnings with incremental credit-card earnings. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.75%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "tesco-bank-everyday-low-apr",
+      "name": "Everyday Low APR Credit Card",
+      "issuer": "Tesco Bank",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.tescobank.com/credit-cards/low-apr-credit-card/",
+      "termsUrl": "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+      "sourceUrls": [
+        "https://www.tescobank.com/credit-cards/low-apr-credit-card/",
+        "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+        "https://www.tescobank.com/credit-cards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Clubcard vouchers have an official fixed base conversion; the model uses only credit-card-attributable points where separable. The network was not explicitly stated in the official pages reviewed. At Tesco, headline point totals can combine ordinary Clubcard earnings with incremental credit-card earnings. Published foreign-purchase fee: 2.75%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "tesco-bank-foundation",
+      "name": "Foundation Credit Card",
+      "issuer": "Tesco Bank",
+      "network": "Not stated",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.tescobank.com/credit-cards/foundation-credit-card/",
+      "termsUrl": "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+      "sourceUrls": [
+        "https://www.tescobank.com/credit-cards/foundation-credit-card/",
+        "https://www.tescobank.com/credit-cards/charges-fees-interest/",
+        "https://www.tescobank.com/credit-cards/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Clubcard vouchers have an official fixed base conversion; the model uses only credit-card-attributable points where separable. The network was not explicitly stated in the official pages reviewed. At Tesco, headline point totals can combine ordinary Clubcard earnings with incremental credit-card earnings. Published foreign-purchase fee: 2.75%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "tsb-platinum-purchase-card",
+      "name": "Platinum Purchase Card",
+      "issuer": "TSB",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.tsb.co.uk/credit-cards/purchases.html",
+      "termsUrl": "https://www.tsb.co.uk/credit-card/platinum-purchase-card-summary.pdf",
+      "sourceUrls": [
+        "https://www.tsb.co.uk/credit-cards/purchases.html",
+        "https://www.tsb.co.uk/credit-card/platinum-purchase-card-summary.pdf",
+        "https://www.tsb.co.uk/credit-cards/credit-card-comparison.html"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Active product with no deterministic ongoing purchase reward. Promotional periods vary by applicant. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.95%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "vanquis-balance-transfer",
+      "name": "Vanquis Balance Transfer Credit Card",
+      "issuer": "Vanquis Bank Limited",
+      "network": "Not stated",
+      "annualFeePence": null,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.vanquis.com/credit-cards/",
+      "termsUrl": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "sourceUrls": [
+        "https://www.vanquis.com/credit-cards/",
+        "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Promotion length, APR, limit, and the actual balance-transfer fee can vary by applicant; the 3.9% fee is presented as an example, not a universal term. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "vanquis-credit-builder",
+      "name": "Vanquis Credit Builder Credit Card",
+      "issuer": "Vanquis Bank Limited",
+      "network": "Not stated",
+      "annualFeePence": null,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.vanquis.com/credit-cards/",
+      "termsUrl": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "sourceUrls": [
+        "https://www.vanquis.com/credit-cards/",
+        "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The official page advertises cashback with selected retailers but does not publish stable merchant rates, caps, or offer dates.",
+      "rules": []
+    },
+    {
+      "slug": "vanquis-low-apr-balance-transfer",
+      "name": "Vanquis Low APR Balance Transfer Credit Card",
+      "issuer": "Vanquis Bank Limited",
+      "network": "Not stated",
+      "annualFeePence": null,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.vanquis.com/credit-cards/",
+      "termsUrl": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "sourceUrls": [
+        "https://www.vanquis.com/credit-cards/",
+        "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The offered 9.9% or 12.9% rate, duration, APR and limit are eligibility-dependent. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "vanquis-purchase",
+      "name": "Vanquis Purchase Credit Card",
+      "issuer": "Vanquis Bank Limited",
+      "network": "Not stated",
+      "annualFeePence": null,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.vanquis.com/credit-cards/",
+      "termsUrl": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "sourceUrls": [
+        "https://www.vanquis.com/credit-cards/",
+        "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The purchase offer and APR are personalised, and selected-retailer cashback lacks stable published earning rules. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking.",
+      "rules": []
+    },
+    {
+      "slug": "vanquis-travel",
+      "name": "Vanquis Travel Credit Card",
+      "issuer": "Vanquis Bank Limited",
+      "network": "Visa",
+      "annualFeePence": null,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.vanquis.com/credit-cards/travel-credit-card/",
+      "termsUrl": "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf",
+      "sourceUrls": [
+        "https://www.vanquis.com/credit-cards/travel-credit-card/",
+        "https://www.vanquis.com/wp-content/uploads/2025/08/PD12608-0925_Generic-AB_CC_Standard_Terms-I-v1.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Zero foreign transaction fees applies to overseas purchase and cash transactions, but cash-withdrawal fees of up to 5% or £3 may still apply. SmartDelay and AirRefund are third-party benefits that may change. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "virgin-money-uk-virgin-atlantic-reward",
+      "name": "Virgin Atlantic Reward Credit Card",
+      "issuer": "Virgin Money",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://uk.virginmoney.com/cards/products/vaa-cards/",
+      "termsUrl": "https://uk.virginmoney.com/virgin/assets/pdf/VM48925.pdf",
+      "sourceUrls": [
+        "https://uk.virginmoney.com/cards/products/vaa-cards/",
+        "https://uk.virginmoney.com/virgin/assets/pdf/VM48925.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Virgin Points and the annual reward voucher do not have a single official fixed monetary value. Reward-voucher value depends on Flying Club tier and redemption. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "virgin-money-uk-virgin-atlantic-reward-plus",
+      "name": "Virgin Atlantic Reward+ Credit Card",
+      "issuer": "Virgin Money",
+      "network": "Mastercard",
+      "annualFeePence": 16000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://uk.virginmoney.com/cards/products/vaa-cards/",
+      "termsUrl": "https://uk.virginmoney.com/virgin/assets/pdf/VM48924.pdf",
+      "sourceUrls": [
+        "https://uk.virginmoney.com/cards/products/vaa-cards/",
+        "https://uk.virginmoney.com/virgin/assets/pdf/VM48924.pdf"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Virgin Points and the annual reward voucher do not have a single official fixed monetary value. Reward-voucher value depends on Flying Club tier and redemption. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 2.99%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "virgin-money-uk-everyday-cashback",
+      "name": "Virgin Money Everyday Cashback Credit Card",
+      "issuer": "Virgin Money",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://uk.virginmoney.com/cards/products/everyday-cashback-cards/",
+      "termsUrl": "https://uk.virginmoney.com/cards/terms/everyday-cashback-card-terms/",
+      "sourceUrls": [
+        "https://uk.virginmoney.com/cards/products/everyday-cashback-cards/",
+        "https://uk.virginmoney.com/cards/terms/everyday-cashback-card-terms/"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "The ongoing reward is direct cashback and the monthly cap is explicit. 1 introductory or account-specific promotion was recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "yonder-free-credit",
+      "name": "Yonder Free Credit Card",
+      "issuer": "Yonder Technology Ltd",
+      "network": "Mastercard",
+      "annualFeePence": 0,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.yonder.com/credit-cards/free-credit-card",
+      "termsUrl": "https://www.yonder.com/docs/uk-rewards-terms-conditions-2-2",
+      "sourceUrls": [
+        "https://www.yonder.com/credit-cards/free-credit-card",
+        "https://www.yonder.com/docs/uk-rewards-terms-conditions-2-2"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Free members cannot redeem points for the fixed cash-equivalent credit described in the rewards terms. Experience redemption cost and value vary in-app, so a universal cash value must not be assigned. 2 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    },
+    {
+      "slug": "yonder-premium-credit",
+      "name": "Yonder Premium Credit Card",
+      "issuer": "Yonder Technology Ltd",
+      "network": "Mastercard",
+      "annualFeePence": 19000,
+      "comparisonStatus": "catalog_only",
+      "baseReward": {
+        "type": "cashback",
+        "rate": 0,
+        "pointValuePence": null,
+        "redemptionLabel": "Catalogued for identification; reward comparison pending"
+      },
+      "sourceUrl": "https://www.yonder.com/credit-cards/premium-credit-card",
+      "termsUrl": "https://www.yonder.com/docs/uk-rewards-terms-conditions-2-2",
+      "sourceUrls": [
+        "https://www.yonder.com/credit-cards/premium-credit-card",
+        "https://www.yonder.com/docs/uk-rewards-terms-conditions-2-2"
+      ],
+      "sourceCheckedAt": "2026-09-28",
+      "notes": "Yonder has both older 'Full' pages/agreements quoting £15 monthly or £160 annually and current 'Premium' pages quoting £17.99 monthly or £190 annually. This record follows the current Premium product page. Experience redemption can produce higher value (marketed as up to 2.5% return), but it varies by reward. The rankable floor uses the official fixed cash-equivalent credit only. 3 introductory or account-specific promotions were recorded in research but excluded from ongoing checkout ranking. Published foreign-purchase fee: 0%. FX costs are not yet included in ranking.",
+      "rules": []
+    }
+  ]
+}
