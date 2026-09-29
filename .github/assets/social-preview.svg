@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">Pip Card Scout</title>
+  <desc id="description">Technical social preview for the Pip Card Scout Chrome extension.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1715"/>
+      <stop offset="0.55" stop-color="#102a26"/>
+      <stop offset="1" stop-color="#173f3a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#c8ff62" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#c8ff62" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#eaffc7" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#background)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <path d="M0 536C238 468 398 566 646 500S1030 400 1280 459V640H0Z" fill="#c8ff62" fill-opacity="0.035"/>
+
+  <g transform="translate(72 72)" filter="url(#shadow)">
+    <rect width="156" height="156" rx="38" fill="#173f3a" stroke="#c8ff62" stroke-opacity="0.28"/>
+    <circle cx="124" cy="28" r="15" fill="#c8ff62"/>
+    <path d="M78 31v16" stroke="#c8ff62" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="78" cy="26" r="9" fill="#ff9c5b" stroke="#c8ff62" stroke-width="5"/>
+    <rect x="29" y="46" width="98" height="75" rx="29" fill="#fbfcf8" stroke="#c8ff62" stroke-width="6"/>
+    <ellipse cx="58" cy="78" rx="8" ry="10" fill="#173f3a"/>
+    <ellipse cx="98" cy="78" rx="8" ry="10" fill="#173f3a"/>
+    <path d="M65 99c8 9 18 9 26 0" fill="none" stroke="#ff9c5b" stroke-width="7" stroke-linecap="round"/>
+    <path d="M47 124v9m62-9v9" stroke="#ff9c5b" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <g transform="translate(264 73)">
+      <rect width="248" height="34" rx="17" fill="#c8ff62"/>
+      <text x="124" y="23" fill="#102a26" font-size="14" font-weight="800" letter-spacing="1.8" text-anchor="middle">OPEN SOURCE · MANIFEST V3</text>
+    </g>
+
+    <text x="264" y="169" fill="#fbfcf8" font-size="74" font-weight="780" letter-spacing="-3">Pip Card Scout</text>
+    <text x="266" y="220" fill="#cfe0db" font-size="25" font-weight="480">The technical way to pick the best rewards card</text>
+    <text x="266" y="254" fill="#cfe0db" font-size="25" font-weight="480">in your wallet at checkout.</text>
+
+    <g transform="translate(72 319)">
+      <text x="0" y="0" fill="#7f9f97" font-size="13" font-weight="750" letter-spacing="2">DECISION PIPELINE</text>
+
+      <g transform="translate(0 28)">
+        <rect width="242" height="74" rx="14" fill="#fbfcf8" fill-opacity="0.08" stroke="#fbfcf8" stroke-opacity="0.13"/>
+        <circle cx="34" cy="37" r="16" fill="#c8ff62" fill-opacity="0.17"/>
+        <text x="34" y="43" fill="#c8ff62" font-size="18" font-weight="800" text-anchor="middle">1</text>
+        <text x="63" y="32" fill="#fbfcf8" font-size="18" font-weight="700">Checkout context</text>
+        <text x="63" y="53" fill="#9db5ae" font-size="14">Merchant · category · GBP</text>
+      </g>
+
+      <path d="M251 65h36" stroke="#c8ff62" stroke-width="2" stroke-dasharray="5 5"/>
+      <path d="m281 59 8 6-8 6" fill="none" stroke="#c8ff62" stroke-width="2"/>
+
+      <g transform="translate(298 28)">
+        <rect width="242" height="74" rx="14" fill="#fbfcf8" fill-opacity="0.08" stroke="#fbfcf8" stroke-opacity="0.13"/>
+        <circle cx="34" cy="37" r="16" fill="#ff9c5b" fill-opacity="0.2"/>
+        <text x="34" y="43" fill="#ffb27e" font-size="18" font-weight="800" text-anchor="middle">2</text>
+        <text x="63" y="32" fill="#fbfcf8" font-size="18" font-weight="700">Deterministic rank</text>
+        <text x="63" y="53" fill="#9db5ae" font-size="14">Integer arithmetic · trace</text>
+      </g>
+
+      <path d="M549 65h36" stroke="#c8ff62" stroke-width="2" stroke-dasharray="5 5"/>
+      <path d="m579 59 8 6-8 6" fill="none" stroke="#c8ff62" stroke-width="2"/>
+
+      <g transform="translate(596 28)">
+        <rect width="242" height="74" rx="14" fill="#fbfcf8" fill-opacity="0.08" stroke="#fbfcf8" stroke-opacity="0.13"/>
+        <circle cx="34" cy="37" r="16" fill="#c8ff62" fill-opacity="0.17"/>
+        <text x="34" y="43" fill="#c8ff62" font-size="18" font-weight="800" text-anchor="middle">3</text>
+        <text x="63" y="32" fill="#fbfcf8" font-size="18" font-weight="700">Explain the winner</text>
+        <text x="63" y="53" fill="#9db5ae" font-size="14">Value · comparison · caveats</text>
+      </g>
+
+      <path d="M847 65h36" stroke="#c8ff62" stroke-width="2" stroke-dasharray="5 5"/>
+      <path d="m877 59 8 6-8 6" fill="none" stroke="#c8ff62" stroke-width="2"/>
+
+      <g transform="translate(894 28)">
+        <rect width="242" height="74" rx="14" fill="#c8ff62" fill-opacity="0.12" stroke="#c8ff62" stroke-opacity="0.38"/>
+        <circle cx="34" cy="37" r="16" fill="#c8ff62"/>
+        <path d="m27 37 5 5 10-11" fill="none" stroke="#173f3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="63" y="32" fill="#fbfcf8" font-size="18" font-weight="700">You choose</text>
+        <text x="63" y="53" fill="#bcd0ca" font-size="14">Chrome Autofill stays in control</text>
+      </g>
+    </g>
+
+    <line x1="72" y1="480" x2="1208" y2="480" stroke="#fbfcf8" stroke-opacity="0.12"/>
+
+    <g transform="translate(72 516)">
+      <text x="0" y="30" fill="#c8ff62" font-size="32" font-weight="800">58</text>
+      <text x="56" y="28" fill="#b8ccc6" font-size="14" font-weight="680" letter-spacing="1">UK PRODUCTS</text>
+
+      <line x1="238" y1="0" x2="238" y2="52" stroke="#fbfcf8" stroke-opacity="0.12"/>
+      <text x="276" y="30" fill="#c8ff62" font-size="32" font-weight="800">6</text>
+      <text x="312" y="28" fill="#b8ccc6" font-size="14" font-weight="680" letter-spacing="1">COMPARISON-READY</text>
+
+      <line x1="552" y1="0" x2="552" y2="52" stroke="#fbfcf8" stroke-opacity="0.12"/>
+      <text x="590" y="30" fill="#ffad76" font-size="32" font-weight="800">0</text>
+      <text x="626" y="28" fill="#b8ccc6" font-size="14" font-weight="680" letter-spacing="1">PAYMENT CREDENTIALS</text>
+
+      <line x1="886" y1="0" x2="886" y2="52" stroke="#fbfcf8" stroke-opacity="0.12"/>
+      <text x="924" y="30" fill="#fbfcf8" font-size="17" font-weight="700">TypeScript · Next.js</text>
+      <text x="924" y="50" fill="#8da9a1" font-size="15">Supabase · Postgres · Vercel</text>
+    </g>
+  </g>
+</svg>

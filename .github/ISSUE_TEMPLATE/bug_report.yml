@@ -1,0 +1,82 @@
+name: Bug report
+description: Report reproducible extension, API, catalogue, or documentation behaviour.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Pip. Do not include card numbers, CVCs, access tokens, or other sensitive data.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Chrome extension
+        - Recommendation engine
+        - Card catalogue
+        - Hosted API or authentication
+        - Documentation or packaging
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Pip version
+      description: Find this on chrome://extensions or the GitHub release.
+      placeholder: 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: chrome
+    attributes:
+      label: Google Chrome version and operating system
+      placeholder: Chrome 140 on macOS 26.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use a public test page where possible and redact all private information.
+      placeholder: |
+        1. Open Pip on ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add sanitized screenshots or console output if useful. Never paste credentials or payment data.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: I removed payment credentials, account tokens, and personal data from this report.
+          required: true

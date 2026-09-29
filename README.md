@@ -1,107 +1,168 @@
-# Pip — the card scout at checkout
+<div align="center">
+  <img src="./extension/assets/icon-128.png" width="96" height="96" alt="Pip Card Scout logo">
+  <h1>Pip Card Scout</h1>
+  <p><strong>Pick the highest-value rewards card in your wallet at checkout.</strong></p>
+  <p>
+    <a href="https://github.com/Mattlo0546/pip-card-scout/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Mattlo0546/pip-card-scout/actions/workflows/ci.yml/badge.svg?branch=main"></a>
+    <a href="https://github.com/Mattlo0546/pip-card-scout/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Mattlo0546/pip-card-scout?style=flat-square"></a>
+    <img alt="Chrome Manifest V3" src="https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4?style=flat-square&logo=googlechrome&logoColor=white">
+    <img alt="Node.js 24" src="https://img.shields.io/badge/Node.js-24-339933?style=flat-square&logo=nodedotjs&logoColor=white">
+    <a href="./LICENSE"><img alt="MIT licence" src="https://img.shields.io/github/license/Mattlo0546/pip-card-scout?style=flat-square"></a>
+  </p>
+  <p>
+    <a href="https://github.com/Mattlo0546/pip-card-scout/releases/latest"><strong>Download</strong></a>
+    · <a href="#quick-start">Install</a>
+    · <a href="#architecture">Architecture</a>
+    · <a href="./PRIVACY.md">Privacy</a>
+  </p>
+</div>
 
-Pip is a Chrome extension that recommends the best rewards card from the cards a user already owns. At checkout, it combines the merchant category and purchase total with a source-backed UK credit-card catalogue, then compares cashback, points, miles, thresholds, caps, and eligible merchant offers.
+Pip is a Manifest V3 Chrome extension that ranks comparison-ready UK rewards cards a user already owns. At an HTTPS checkout, it combines the merchant, inferred category, and GBP total with a source-backed card catalogue, then returns one recommendation with an auditable explanation.
 
-This repository is the product: the Manifest V3 extension, its reward engine, the card catalogue, database migrations, and the small API the extension needs. There is no consumer website. The Vercel deployment is an API backend only.
+This repository is the complete product: the extension, deterministic reward engine, reviewed catalogue, Supabase migrations, tests, and the small Vercel API the extension needs. **There is no consumer website.**
 
-> **Release status:** the extension and hosted backend are suitable for controlled beta testing. Unrestricted public account creation is not launch-ready until production Auth uses a custom SMTP provider and CAPTCHA/abuse controls instead of Supabase's default email service. Installation is manual through Google Chrome Developer mode.
+> [!IMPORTANT]
+> **Controlled beta:** the extension is installable from GitHub today, but it uses manual Chrome Developer-mode installation. Sign in with a beta account; create one only where beta onboarding has been enabled. Unrestricted self-service signup remains gated on production SMTP, CAPTCHA, and abuse controls.
 
-## Install in Google Chrome
+## Quick start
 
-Pip is currently distributed as a GitHub release rather than through the Chrome Web Store.
+1. Open the [latest release](https://github.com/Mattlo0546/pip-card-scout/releases/latest).
+2. Download `pip-card-scout-1.0.0.zip` and its `.sha256` file.
+3. Unzip the extension into a permanent folder.
+4. In Google Chrome, open `chrome://extensions` and enable **Developer mode**.
+5. Select **Load unpacked** and choose the unzipped folder containing `manifest.json`.
+6. Pin Pip, open it, and sign in with a beta account.
+7. Search the catalogue and add the card products you actually own.
+8. At an HTTPS checkout with a visible GBP total, open Pip and select **Find my best card**.
+9. Use Chrome Autofill to select the physical card matching Pip's recommendation.
 
-1. Open the [latest GitHub release](https://github.com/Mattlo0546/pip-card-scout/releases/latest) and download the extension ZIP.
-2. Unzip it to a permanent folder.
-3. In Google Chrome, open `chrome://extensions`.
-4. Enable **Developer mode**.
-5. Select **Load unpacked**, then choose the unzipped folder containing `manifest.json`.
-6. Pin Pip from Chrome's Extensions menu.
-7. Open Pip, create an account, confirm the email if prompted, and sign in.
-8. Add the card products you actually own. On an HTTPS checkout page with a visible GBP total, open Pip and select **Find my best card**.
+Chrome cannot install an unpacked extension directly from a ZIP. The Chrome Web Store version is not available yet.
 
-Chrome does not install extensions directly from a ZIP, so it must be unzipped first. Developer mode is required until Pip is published in the Chrome Web Store.
+<details>
+<summary><strong>Optional: verify the release download</strong></summary>
 
-## What “add my cards” means
-
-Chrome does not expose a public extension API for reading cards saved in Chrome Payments. Pip therefore asks a user to identify each card product they own from the catalogue. A nickname and last four digits are optional labels.
-
-Pip never asks for, stores, transmits, or fills:
-
-- a full card number (PAN);
-- CVC or CVV;
-- expiry date;
-- cardholder name or billing address; or
-- Chrome Autofill payment data.
-
-After Pip recommends a product, the user chooses the matching payment card in Chrome Autofill. Pip does not verify card ownership and cannot make the final payment selection on the user's behalf.
-
-## How it works
-
-```text
-user opens Pip at checkout
-  └─ content script reads merchant/category/GBP total
-       └─ extension service worker calls the fixed Pip API
-            └─ Vercel API verifies the Supabase user
-                 ├─ loads that user's wallet under row-level security
-                 ├─ loads the published card and reward rules
-                 └─ ranks eligible cards with deterministic arithmetic
-       └─ Pip shows the winner and explanation
-            └─ user selects the card in Chrome Autofill
-```
-
-Vercel is used because an extension must not contain database administrator credentials or trust client-side ranking results. It hosts only authentication proxies and JSON endpoints for the catalogue, wallet, settings, history, and recommendations. Visiting [`pip-card-scout.vercel.app`](https://pip-card-scout.vercel.app) returns service information rather than a consumer interface.
-
-Supabase provides email/password authentication and Postgres. Private wallet rows are protected with row-level security. Session tokens live in `chrome.storage.session`, are unavailable to page scripts, and disappear with the browser session.
-
-## UK card catalogue
-
-The published `uk-2026.09.28` catalogue contains 58 current UK consumer credit-card products from 22 issuer or programme groups, based on official first-party sources checked on 28 September 2026.
-
-- 6 products have reward terms that Pip can compare deterministically.
-- 52 products are catalogue-only. A user can identify the product, but it remains disabled for recommendations until Pip can represent its annual-spend tiers, account-age rules, cap usage, activation state, or variable redemption value safely.
-- Introductory bonuses and personalised offers are not treated as recurring base earn rates.
-- Closed programmes and non-credit products are excluded.
-
-The normalized source of truth is [`catalog/uk-credit-cards.json`](./catalog/uk-credit-cards.json). Source receipts live in [`research/uk-card-catalog/`](./research/uk-card-catalog/).
+Keep the ZIP and checksum in the same directory, then run one of:
 
 ```bash
-npm run catalog:normalize
-npm run catalog:build
-npm run catalog:validate
+# macOS
+shasum -a 256 -c pip-card-scout-1.0.0.zip.sha256
+
+# Linux
+sha256sum --check pip-card-scout-1.0.0.zip.sha256
 ```
 
-Card terms change. Users should check an issuer's current terms before relying on a recommendation.
+</details>
 
-## Current limitations
+## What Pip does
 
-Pip is an installable controlled beta, not financial advice and not a payment service.
+| Step | Responsibility |
+| --- | --- |
+| **1. Identify** | You select the card products you own; Pip stores product references, not payment credentials. |
+| **2. Understand** | On explicit activation, Pip reads the active checkout's merchant, inferred category, and GBP total. |
+| **3. Compare** | The API loads your enabled cards and evaluates published reward rules with deterministic integer arithmetic. |
+| **4. Explain** | Pip shows the winner, estimated reward value, comparison trace, and any relevant caveats. |
+| **5. Pay** | You make the final selection using the matching card in Chrome Autofill. |
 
-- Recommendations currently support GBP checkouts and verified products only.
-- Merchant category and MCC are inferred before settlement and may differ from the issuer's classification.
-- Generic checkout detection works on many sites but not every checkout design, iframe, or dynamically rendered total.
-- The engine does not yet track every annual fee, foreign-exchange fee, returns adjustment, reward cap, offer activation, or previously used allowance.
-- Catalogue updates require human review; issuer terms can change between releases.
-- Cloud decision history is off by default. Automated retention enforcement and account export are not yet implemented.
-- GitHub installation requires Developer mode; Chrome Web Store installation is not available yet.
-- Public self-service onboarding still requires production SMTP, CAPTCHA, and abuse-control configuration. Supabase's default email service is not suitable for unrestricted signups.
+Chrome does not expose a public extension API for reading cards saved in Chrome Payments. Pip therefore never attempts to inspect that vault or automate the final payment selection.
 
-See [Privacy](./PRIVACY.md), [Support](./SUPPORT.md), and [Security](./SECURITY.md) before using the hosted beta.
+## Architecture
 
-## Develop locally
+```mermaid
+flowchart LR
+  subgraph Browser[Google Chrome]
+    A["HTTPS checkout<br/>merchant · category · GBP total"]
+    B["MV3 content script<br/>active tab only"]
+    C["Extension service worker<br/>session + API client"]
+    G["Closed result UI<br/>winner + explanation"]
+    H["Chrome Autofill<br/>user selects the card"]
+    A -->|explicit user action| B
+    B -->|minimal checkout context| C
+    C --> G
+    G --> H
+  end
+
+  subgraph Cloud[Hosted backend]
+    D["Next.js API<br/>Vercel"]
+    E[("Supabase<br/>Auth · Postgres · RLS")]
+    F["Deterministic<br/>rewards engine"]
+    D -->|user-scoped queries| E
+    E --> F
+    F -->|ranked decision| D
+  end
+
+  C -->|HTTPS + bearer token| D
+  D -->|minimal result| C
+```
+
+The merchant page receives no Supabase token, wallet data, or payment credentials. Session tokens live in `chrome.storage.session` and disappear with the browser session. Vercel hosts only the authenticated JSON API; visiting [`pip-card-scout.vercel.app`](https://pip-card-scout.vercel.app) returns service metadata rather than a website.
+
+## Catalogue coverage
+
+| Metric | Current release |
+| --- | ---: |
+| Catalogue version | `uk-2026.09.28` |
+| Current UK products catalogued | **58** |
+| Comparison-ready products | **6** |
+| Catalogue-only products | **52** |
+| Issuer or programme groups | **22** |
+| Supported checkout currency | **GBP** |
+| First-party sources last reviewed | **28 September 2026** |
+
+The six comparison-ready products have reward terms that Pip can represent deterministically. The other 52 remain available for identification but disabled in recommendations until annual-spend tiers, account-age rules, cap usage, activation state, or variable redemption value can be modelled safely.
+
+Introductory bonuses and personalised offers are not treated as recurring base earn. Closed programmes and non-credit products are excluded. The normalized source of truth is [`catalog/uk-credit-cards.json`](./catalog/uk-credit-cards.json), with source receipts under [`research/uk-card-catalog/`](./research/uk-card-catalog/).
+
+> [!NOTE]
+> Card terms change. Pip is not financial advice; always check the issuer's current terms before relying on a recommendation.
+
+## Security and privacy model
+
+Pip stores only what it needs to identify and compare a user's cards:
+
+- a catalogue product ID;
+- an optional nickname and last four digits;
+- whether the card is enabled; and
+- optional recommendation history, which is off by default.
+
+Pip never asks for, stores, transmits, or fills a full card number (PAN), CVC/CVV, expiry date, cardholder name, billing address, or Chrome Autofill payment data. Private wallet rows are user-scoped with Supabase Row Level Security, and administrator credentials never ship in the extension.
+
+Read the full [privacy notice](./PRIVACY.md), [security policy](./SECURITY.md), and [production architecture](./docs/production-architecture.md).
+
+## Repository map
+
+```text
+extension/                 Manifest V3 popup, service worker, and checkout UI
+app/api/v1/                Versioned Next.js JSON endpoints
+lib/                       Auth, validation, catalogue, and ranking engine
+catalog/                   Normalized published UK card catalogue
+research/uk-card-catalog/  First-party source receipts and review notes
+supabase/migrations/       Schema, RLS policies, grants, and catalogue data
+tests/                     Engine, API, security, catalogue, and contract tests
+scripts/                   Catalogue build and reproducible extension packaging
+docs/                      Deployment and trust-boundary documentation
+```
+
+## Local development
 
 Prerequisites: Node.js 24+, Docker, and the Supabase CLI.
 
 ```bash
-npm install
+git clone https://github.com/Mattlo0546/pip-card-scout.git
+cd pip-card-scout
+npm ci
 supabase start
 supabase db reset
 cp .env.example .env.local
 npm run dev
 ```
 
-Use the local Supabase output for `SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY` in `.env.local`. For a local extension/API run, follow [`extension/README.md`](./extension/README.md); the checked-in extension is deliberately locked to the production API.
+Copy the local Supabase `anon key` and `service_role key` printed by `supabase start` into `.env.local` as `SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY`.
 
-Run the verification commands sequentially because the build and typecheck both use generated Next.js types:
+The checked-in extension is deliberately pinned to the production API. For local extension testing, update the three API-origin locations documented in [`extension/README.md`](./extension/README.md).
+
+### Verification and packaging
+
+Run these commands sequentially because build and typecheck both use Next.js-generated types:
 
 ```bash
 npm run lint
@@ -111,11 +172,20 @@ npm run build
 npm run extension:package
 ```
 
-The packaging command validates the production manifest and writes an installable ZIP under `dist/`. CI runs the same checks and publishes the ZIP as a workflow artifact. Maintainers attach that exact artifact to a tagged GitHub release; see the [deployment guide](./docs/deployment.md).
+Packaging validates the production manifest and writes a reproducible ZIP plus checksum under `dist/`. CI runs the same checks and publishes the archive as a workflow artifact. Maintainers attach that exact artifact to a tagged GitHub release; see the [deployment guide](./docs/deployment.md).
 
-## API
+The catalogue pipeline can also be run independently:
 
-All user endpoints except health and authentication require a Supabase access token as `Authorization: Bearer <token>`.
+```bash
+npm run catalog:normalize
+npm run catalog:build
+npm run catalog:validate
+```
+
+<details>
+<summary><strong>API surface</strong></summary>
+
+All user endpoints except health and authentication require a Supabase access token as `Authorization: Bearer &lt;token&gt;`.
 
 | Endpoint | Purpose |
 | --- | --- |
@@ -132,10 +202,26 @@ All user endpoints except health and authentication require a Supabase access to
 | `DELETE /api/v1/account` | Permanently delete the authenticated account and its stored data |
 | `GET /api/health` | Check backend readiness |
 
-For trust boundaries and deployment details, see [production architecture](./docs/production-architecture.md) and [deployment](./docs/deployment.md).
+</details>
 
-## Contributing and licence
+## Current limitations
 
-Contributions are welcome; catalogue changes must include current first-party issuer evidence. Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
+- Recommendations support GBP checkouts and the six verified products only.
+- Merchant category and MCC are inferred before settlement and may differ from the issuer's classification.
+- Generic checkout detection works on many sites, but not every checkout design, iframe, or dynamically rendered total.
+- The engine does not yet track every annual fee, FX fee, return adjustment, reward cap, offer activation, or previously used allowance.
+- Catalogue updates require human review; issuer terms can change between releases.
+- Cloud decision history is off by default. Automated retention enforcement and account export are not yet implemented.
+- Installation requires Chrome Developer mode; there is no Chrome Web Store listing yet.
+- Public signup requires production SMTP, CAPTCHA, and abuse-control configuration.
 
-The code is available under the [MIT License](./LICENSE).
+## Contributing
+
+Contributions are welcome. Catalogue changes must include current first-party issuer evidence; code changes must preserve the no-payment-credentials boundary. Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
+
+- Found a bug? Use the repository's bug report form.
+- Have a product idea? Open a feature request.
+- Found a vulnerability? Follow [SECURITY.md](./SECURITY.md) instead of opening a public issue.
+- Need help installing or using Pip? See [SUPPORT.md](./SUPPORT.md).
+
+Released under the [MIT License](./LICENSE).

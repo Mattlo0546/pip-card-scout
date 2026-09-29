@@ -1,0 +1,61 @@
+name: Feature request
+description: Propose a focused improvement to Pip Card Scout.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pip recommends which owned card to use; it does not store or fill payment credentials. Proposals should preserve that boundary.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Chrome extension
+        - Recommendation engine
+        - Card catalogue
+        - Hosted API or authentication
+        - Developer experience
+        - Documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or maintainer problem would this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest useful outcome, not only an implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reward-rule evidence
+      description: For catalogue changes, include current first-party issuer URLs and effective dates.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues for this request.
+          required: true
+        - label: This proposal does not require Pip to collect PAN, CVC, expiry, or Chrome Autofill payment data.
+          required: true
